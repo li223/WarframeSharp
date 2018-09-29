@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace WarframeSharp
 {
     /// <summary>
-    /// The main Client Class
+    /// The Main Client Class
     /// </summary>
     public class WarframeSharpClient
     {
-        private SemaphoreSlim _semaphore = new SemaphoreSlim(1, 1);
         private readonly string _baseQuery = "https://api.warframestat.us";
         private HttpClient _httpClient = new HttpClient();
 
@@ -23,10 +21,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<WorldState?> GetWorldStateDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<WorldState>(content);
             }
             else return null;
@@ -39,10 +37,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<News>> GetNewsDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/news");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/news").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<News>>(content);
             }
             else return null;
@@ -55,10 +53,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<Event>> GetEventsDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/events");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/events").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<Event>>(content);
             }
             else return null;
@@ -71,10 +69,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<Alert>> GetAlertsDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/alerts");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/alerts").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<Alert>>(content);
             }
             else return null;
@@ -87,10 +85,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<Sortie?> GetSortieDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/sortie");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/sortie").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<Sortie>(content);
             }
             else return null;
@@ -103,10 +101,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<SyndicateMission>> GetSyndicateMissionsDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/syndicateMissions");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/syndicateMissions").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<SyndicateMission>>(content);
             }
             else return null;
@@ -119,10 +117,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<Fissure>> GetFissuresDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/fissures");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/fissures").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<Fissure>>(content);
             }
             else return null;
@@ -135,10 +133,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<FlashSale>> GetFlashSalesDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/flashSales");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/flashSales").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<FlashSale>>(content);
             }
             else return null;
@@ -151,10 +149,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<Invasion>> GetInvasionsDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/invasions");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/invasions").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<Invasion>>(content);
             }
             else return null;
@@ -168,10 +166,10 @@ namespace WarframeSharp
         [Obsolete("The endpoint this method uses is deprecated.", false)]
         public async Task<IEnumerable<DarkSector>> GetDarkSectorsDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/darkSector");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/darkSector").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<DarkSector>>(content);
             }
             else return null;
@@ -184,10 +182,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<VoidTrader?> GetVoidTraderDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/voidTrader");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/voidTrader").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<VoidTrader>(content);
             }
             else return null;
@@ -200,10 +198,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<DailyDeal>> GetDarvoDealsAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/dailyDeals");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/dailyDeals").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<DailyDeal>>(content);
             }
             else return null;
@@ -216,10 +214,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<Simaris?> GetSancturayDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/simaris");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/simaris").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<Simaris>(content);
             }
             else return null;
@@ -232,10 +230,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<IEnumerable<ConclaveChallenge>> GetConclaveChallengesDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/conclaveChallenges");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/conclaveChallenges").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<ConclaveChallenge>>(content);
             }
             else return null;
@@ -248,10 +246,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<Cycle> GetCetusCycleDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/cetusCycle");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/cetusCycle").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<Cycle>(content);
             }
             else return null;
@@ -264,11 +262,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<Cycle> GetEarthCycleDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/earth" +
-                $"Cycle");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/earthCycle").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<Cycle>(content);
             }
             else return null;
@@ -281,10 +278,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<ConstructionProgress?> GetConstructionProgressDataAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/constructionProgress");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/constructionProgress").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<ConstructionProgress>(content);
             }
             else return null;
@@ -297,11 +294,10 @@ namespace WarframeSharp
         /// <returns></returns>
         public async Task<string> GetTimestampAsync(string platform = "pc")
         {
-            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/timestamp");
+            var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/timestamp").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
-                var content = await response.Content.ReadAsStringAsync();
-                var headers = response.Headers;
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<string>(content);
             }
             else return null;
