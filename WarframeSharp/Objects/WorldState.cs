@@ -32,6 +32,9 @@ namespace WarframeSharp
         [JsonProperty("flashSales")]
         public IEnumerable<FlashSale> FlashSale { get; private set; }
 
+        [JsonProperty("invasions")]
+        public IEnumerable<Invasion> Invasions { get; private set; }
+
         [JsonProperty("darkSectors")]
         public IEnumerable<DarkSector> DarkSectors { get; private set; }
 

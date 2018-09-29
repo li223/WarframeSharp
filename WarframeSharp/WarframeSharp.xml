@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WarframeSharp</name>
+    </assembly>
+    <members>
+        <member name="T:WarframeSharp.ConclaveChallenge">
+            <summary>
+            Conclave Challenge Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Id">
+            <summary>
+            Challenge Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Description">
+            <summary>
+            Challenge Description
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Expiry">
+            <summary>
+            Challenge Expiration Timestamp
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Amount">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Mode">
+            <summary>
+            Gamemode required for the challenge
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Category">
+            <summary>
+            Challenge Category
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.Eta">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.HasExpired">
+            <summary>
+            If the challenge has expired or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.IsDaily">
+            <summary>
+            If the challenge is a daily challenge
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.IsRootChallenge">
+            <summary>
+            If the challenge is a root challenge
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.EndString">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConclaveChallenge.AsString">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Sortie">
+            <summary>
+            The Sortie Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Id">
+            <summary>
+            Sortie Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Activation">
+            <summary>
+            Timestamp of Sortie Activation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Expiry">
+            <summary>
+            Timestamp of Sortie Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.RewardPool">
+            <summary>
+            The Sortie Rewards Pool
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Variants">
+            <summary>
+            List of Sortie Missions
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Variant">
+            <summary>
+            Variant Struct
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.WarframeSharpClient">
+            <summary>
+            The main Client Class
+            </summary>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetWorldStateDataAsync(System.String)">
+            <summary>
+            The full response from each of the other methods, useful if you want all the data with only one call.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetNewsDataAsync(System.String)">
+            <summary>
+            Translated News items from the worldstate
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetEventsDataAsync(System.String)">
+            <summary>
+            Events, such as Fomorian Attacks are included here
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetAlertsDataAsync(System.String)">
+            <summary>
+            Description and rewards for Alerts
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetSortieDataAsync(System.String)">
+            <summary>
+            Data about the missions for the current sortie
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetSyndicateMissionsDataAsync(System.String)">
+            <summary>
+            Cycling through different nodes each day, these are a general listing of the nodes that each syndicate will use for the day.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetFissuresDataAsync(System.String)">
+            <summary>
+            Information about current Void Fissure missions
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetFlashSalesDataAsync(System.String)">
+            <summary>
+            Popular Deals, discounts, featured deals.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetInvasionsDataAsync(System.String)">
+            <summary>
+            Data on invasion missions, such as estimated completion time, rewards, etc.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetDarkSectorsDataAsync(System.String)">
+            <summary>
+            The endpoint this method uses is deprecated and only returns a joke response.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetVoidTraderDataAsync(System.String)">
+            <summary>
+            Information on the current Void Trader offerings, or when he will arrive.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetDarvoDealsAsync(System.String)">
+            <summary>
+            Darvo's Daily Deal details
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetSancturayDataAsync(System.String)">
+            <summary>
+            Status data for Simaris' Sanctuary
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetConclaveChallengesDataAsync(System.String)">
+            <summary>
+            Data on each day and week's conclave challenges
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetCetusCycleDataAsync(System.String)">
+            <summary>
+            Data on the Day/night cycle for Cetus on earth
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetEarthCycleDataAsync(System.String)">
+            <summary>
+            The current Earth day/night cycle progress.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetConstructionProgressDataAsync(System.String)">
+            <summary>
+            Construction percentages for showing how far constructed the enemy fleets are.
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetTimestampAsync(System.String)">
+            <summary>
+            The time that the worldstate was last generated
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
