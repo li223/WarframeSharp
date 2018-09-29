@@ -69,6 +69,191 @@
             Unknown
             </summary>
         </member>
+        <member name="T:WarframeSharp.Fissure">
+            <summary>
+            Fissure Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Id">
+            <summary>
+            Fissure Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Node">
+            <summary>
+            The node and planet the fissure is on
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.MissionType">
+            <summary>
+            The mission type
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Enemy">
+            <summary>
+            The type of enemy present 
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Tier">
+            <summary>
+            Fissure tier
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.TierNumber">
+            <summary>
+            Fissure tier expressed as a number
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Activation">
+            <summary>
+            Timestamp of fissure activation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Expiry">
+            <summary>
+            Timestamp of fissure expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.HasExpired">
+            <summary>
+            If the fissure has expired
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Fissure.Eta">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.FlashSale">
+            <summary>
+            Flash sale struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.Id">
+            <summary>
+            Flash sale Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.HasExpired">
+            <summary>
+            If the sale has expired or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.Eta">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.IsPopular">
+            <summary>
+            If the deal is popular or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.IsFeatured">
+            <summary>
+            If the deal is being featured
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.PremiumOverride">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.Discount">
+            <summary>
+            Current item discount
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.Expiry">
+            <summary>
+            Timestamp of deal expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.FlashSale.Item">
+            <summary>
+            The actual item
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Invasion">
+            <summary>
+            Invasion Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Id">
+            <summary>
+            Invasion Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Node">
+            <summary>
+            The node and planet the invasion is on
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Description">
+            <summary>
+            The invasion description
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.AttackerReward">
+            <summary>
+            The reward gained from the attackers
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.AttackingFaction">
+            <summary>
+            The faction that's attacking
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.DefenderReward">
+            <summary>
+            The reward gained from the defenders
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.DefendingFaction">
+            <summary>
+            The faction that's defending
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.IsAgainstInfestation">
+            <summary>
+            If the invasion is against the Infestation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Activation">
+            <summary>
+            Timestamp of invasion activations
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Count">
+            <summary>
+            The number of runs
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.RequiredRuns">
+            <summary>
+            The number of runs required for the reward
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Completion">
+            <summary>
+            The number of runs until completion
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.IsCompleted">
+            <summary>
+            If the invasion has been completed or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.Eta">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Invasion.RewardTypes">
+            <summary>
+            The types of rewards on offer
+            </summary>
+        </member>
         <member name="T:WarframeSharp.Sortie">
             <summary>
             The Sortie Struct
@@ -104,6 +289,36 @@
             Variant Struct
             </summary>
         </member>
+        <member name="P:WarframeSharp.Variant.Boss">
+            <summary>
+            The mission's boss
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Variant.Planet">
+            <summary>
+            The planet the mission is on
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Variant.MissionType">
+            <summary>
+            The type of mission
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Variant.Modifier">
+            <summary>
+            The name of the mission modifier
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Variant.ModifierDescription">
+            <summary>
+            The description of the modifier
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Variant.Node">
+            <summary>
+            The node and planet the mission is on
+            </summary>
+        </member>
         <member name="T:WarframeSharp.WarframeSharpClient">
             <summary>
             The main Client Class
@@ -113,126 +328,126 @@
             <summary>
             The full response from each of the other methods, useful if you want all the data with only one call.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetNewsDataAsync(System.String)">
             <summary>
             Translated News items from the worldstate
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetEventsDataAsync(System.String)">
             <summary>
             Events, such as Fomorian Attacks are included here
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetAlertsDataAsync(System.String)">
             <summary>
             Description and rewards for Alerts
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetSortieDataAsync(System.String)">
             <summary>
             Data about the missions for the current sortie
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetSyndicateMissionsDataAsync(System.String)">
             <summary>
             Cycling through different nodes each day, these are a general listing of the nodes that each syndicate will use for the day.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetFissuresDataAsync(System.String)">
             <summary>
             Information about current Void Fissure missions
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetFlashSalesDataAsync(System.String)">
             <summary>
             Popular Deals, discounts, featured deals.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetInvasionsDataAsync(System.String)">
             <summary>
             Data on invasion missions, such as estimated completion time, rewards, etc.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetDarkSectorsDataAsync(System.String)">
             <summary>
             The endpoint this method uses is deprecated and only returns a joke response.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetVoidTraderDataAsync(System.String)">
             <summary>
             Information on the current Void Trader offerings, or when he will arrive.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetDarvoDealsAsync(System.String)">
             <summary>
             Darvo's Daily Deal details
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetSancturayDataAsync(System.String)">
             <summary>
             Status data for Simaris' Sanctuary
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetConclaveChallengesDataAsync(System.String)">
             <summary>
             Data on each day and week's conclave challenges
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetCetusCycleDataAsync(System.String)">
             <summary>
             Data on the Day/night cycle for Cetus on earth
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetEarthCycleDataAsync(System.String)">
             <summary>
             The current Earth day/night cycle progress.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetConstructionProgressDataAsync(System.String)">
             <summary>
             Construction percentages for showing how far constructed the enemy fleets are.
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetTimestampAsync(System.String)">
             <summary>
             The time that the worldstate was last generated
             </summary>
-            <param name="platform">The platform you would like to get the data for</param>
+            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
             <returns></returns>
         </member>
     </members>
