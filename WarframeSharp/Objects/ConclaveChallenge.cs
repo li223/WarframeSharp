@@ -26,7 +26,7 @@ namespace WarframeSharp
         public string Expiry { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Number of times the challenge needs to be done before completion
         /// </summary>
         [JsonProperty("amount")]
         public int Amount { get; private set; }
@@ -44,7 +44,7 @@ namespace WarframeSharp
         public string Category { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Time until it expires
         /// </summary>
         [JsonProperty("eta")]
         public string Eta { get; private set; }
@@ -68,13 +68,13 @@ namespace WarframeSharp
         public bool IsRootChallenge { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Time until the challenge ends in string format (seems to be the same as eta)
         /// </summary>
         [JsonProperty("endString")]
         public string EndString { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Full Challenge Description
         /// </summary>
         [JsonProperty("asString")]
         public string AsString { get; private set; }

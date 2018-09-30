@@ -56,7 +56,7 @@ namespace WarframeSharp
         public string Expiry { get; private set; }
 
         /// <summary>
-        /// The actual item
+        /// The item being offered
         /// </summary>
         [JsonProperty("item")]
         public string Item { get; private set; }

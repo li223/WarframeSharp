@@ -4,6 +4,41 @@
         <name>WarframeSharp</name>
     </assembly>
     <members>
+        <member name="T:WarframeSharp.Component">
+            <summary>
+            Component Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Component.UniqueName">
+            <summary>
+            Url path of the component
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Component.Name">
+            <summary>
+            Component name
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Component.Description">
+            <summary>
+            Component description
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Component.ItemCount">
+            <summary>
+            Component item count
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Component.IsTradable">
+            <summary>
+            If the component is tradable or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Component.ImageName">
+            <summary>
+            Component image name
+            </summary>
+        </member>
         <member name="T:WarframeSharp.ConclaveChallenge">
             <summary>
             Conclave Challenge Struct
@@ -26,7 +61,7 @@
         </member>
         <member name="P:WarframeSharp.ConclaveChallenge.Amount">
             <summary>
-            Unknown
+            Number of times the challenge needs to be done before completion
             </summary>
         </member>
         <member name="P:WarframeSharp.ConclaveChallenge.Mode">
@@ -41,7 +76,7 @@
         </member>
         <member name="P:WarframeSharp.ConclaveChallenge.Eta">
             <summary>
-            Unknown
+            Time until it expires
             </summary>
         </member>
         <member name="P:WarframeSharp.ConclaveChallenge.HasExpired">
@@ -61,12 +96,12 @@
         </member>
         <member name="P:WarframeSharp.ConclaveChallenge.EndString">
             <summary>
-            Unknown
+            Time until the challenge ends in string format (seems to be the same as eta)
             </summary>
         </member>
         <member name="P:WarframeSharp.ConclaveChallenge.AsString">
             <summary>
-            Unknown
+            Full Challenge Description
             </summary>
         </member>
         <member name="T:WarframeSharp.Fissure">
@@ -121,7 +156,7 @@
         </member>
         <member name="P:WarframeSharp.Fissure.Eta">
             <summary>
-            Unknown
+            Time left before it expires
             </summary>
         </member>
         <member name="T:WarframeSharp.FlashSale">
@@ -171,7 +206,7 @@
         </member>
         <member name="P:WarframeSharp.FlashSale.Item">
             <summary>
-            The actual item
+            The item being offered
             </summary>
         </member>
         <member name="T:WarframeSharp.Invasion">
@@ -226,17 +261,17 @@
         </member>
         <member name="P:WarframeSharp.Invasion.Count">
             <summary>
-            The number of runs
+            Current number of community wide runs
             </summary>
         </member>
         <member name="P:WarframeSharp.Invasion.RequiredRuns">
             <summary>
-            The number of runs required for the reward
+            Number of community wide runs required for invasion completion
             </summary>
         </member>
         <member name="P:WarframeSharp.Invasion.Completion">
             <summary>
-            The number of runs until completion
+            Unknown
             </summary>
         </member>
         <member name="P:WarframeSharp.Invasion.IsCompleted">
@@ -246,12 +281,232 @@
         </member>
         <member name="P:WarframeSharp.Invasion.Eta">
             <summary>
-            Unknown
+            Eta until completion
             </summary>
         </member>
         <member name="P:WarframeSharp.Invasion.RewardTypes">
             <summary>
             The types of rewards on offer
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Job">
+            <summary>
+            Job Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Job.Id">
+            <summary>
+            Job Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Job.Type">
+            <summary>
+            Job Type
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Job.EnemyLevels">
+            <summary>
+            Enemy level, min and max
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Job.StandingStages">
+            <summary>
+            Standing Stages
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Job.RewardPool">
+            <summary>
+            Reward pool
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Mission">
+            <summary>
+            Mission Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.Node">
+            <summary>
+            Node or planet the mission is on
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.Type">
+            <summary>
+            The mission type
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.Faction">
+            <summary>
+            The mission faction
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.Reward">
+            <summary>
+            Mission reward
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.MinEnemyLevel">
+            <summary>
+            Min level of the enemies
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.MaxEnemyLevel">
+            <summary>
+            Max level of the enemies
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.IsNightmare">
+            <summary>
+            Is nightmare mode
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Mission.IsArchwingRequired">
+            <summary>
+            Is an archwing mission
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.News">
+            <summary>
+            News struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.Id">
+            <summary>
+            News Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.Message">
+            <summary>
+            News message
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.Link">
+            <summary>
+            News link
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.ImageLink">
+            <summary>
+            News image link
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.IsPriority">
+            <summary>
+            Is priority news or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.Date">
+            <summary>
+            Date the news was announced
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.Eta">
+            <summary>
+            How long ago from now it was posted
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.IsUpdate">
+            <summary>
+            Is an update
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.IsPrimeAccess">
+            <summary>
+            Is about prime access
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.IsStream">
+            <summary>
+            Is about a stream
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.Translations">
+            <summary>
+            Language translations
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.News.AsString">
+            <summary>
+            News in markdown format
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Patchlog">
+            <summary>
+            Patchlog struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.Name">
+            <summary>
+            Patchlog title
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.Date">
+            <summary>
+            Date of the patch release
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.Url">
+            <summary>
+            Forum url
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.ImageUrl">
+            <summary>
+            Patch image url
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.Additions">
+            <summary>
+            Game additions
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.Changes">
+            <summary>
+            Game changes
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Patchlog.Fixes">
+            <summary>
+            Game fixes
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Reward">
+            <summary>
+            Reward struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.Items">
+            <summary>
+            Singular rewarded items (IE: Helments)
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.CountedItems">
+            <summary>
+            Stackable rewarded items (IE: Nitan Extract)
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.Credits">
+            <summary>
+            Rewarded credits
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.AsString">
+            <summary>
+            Reward name + credit reward
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.ItemString">
+            <summary>
+            Item name
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.Thumbnail">
+            <summary>
+            Image thumbnail
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Reward.Colour">
+            <summary>
+            Unknown
             </summary>
         </member>
         <member name="T:WarframeSharp.Sortie">
@@ -282,6 +537,26 @@
         <member name="P:WarframeSharp.Sortie.Variants">
             <summary>
             List of Sortie Missions
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Boss">
+            <summary>
+            The sortie boss
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Faction">
+            <summary>
+            Sortie faction
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.HasExpired">
+            <summary>
+            If the sortie has expired or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Sortie.Eta">
+            <summary>
+            Time until sortie expires
             </summary>
         </member>
         <member name="T:WarframeSharp.Variant">
@@ -319,9 +594,694 @@
             The node and planet the mission is on
             </summary>
         </member>
+        <member name="T:WarframeSharp.SyndicateMission">
+            <summary>
+            Syndicate Mission Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Id">
+            <summary>
+            Syndicate Mission Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Activation">
+            <summary>
+            Syndicate Mission Activation date
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Expiry">
+            <summary>
+            Syndicate Mission Expiration timestamp
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Syndicate">
+            <summary>
+            Syndicate the Mission is for
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Nodes">
+            <summary>
+            Syndicate Mission locations
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Jobs">
+            <summary>
+            Syndicate Mission types
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SyndicateMission.Eta">
+            <summary>
+            Time until expiration
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Weapon">
+            <summary>
+            Weapon Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.UniqueName">
+            <summary>
+            Url path of the weapon
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Name">
+            <summary>
+            The weapon's name
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.SecondsPerShot">
+            <summary>
+            Seconds needed between shots
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.DamagePerShot">
+            <summary>
+            Damage Per Shot
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.ReloadTime">
+            <summary>
+            The weapon's reload time
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.MagazineSize">
+            <summary>
+            The weapon's magazine size
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.DamagePerSecond">
+            <summary>
+            The weapon's damage per second
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Description">
+            <summary>
+            The weapon's description
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Accuracy">
+            <summary>
+            The weapon's accuracy
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.CriticalChance">
+            <summary>
+            The weapon's critical chance
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.CriticalMultiplier">
+            <summary>
+            The weapon's critical multiplier
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.ProcChance">
+            <summary>
+            The weapon's proc chance
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.FireRate">
+            <summary>
+            The weapon's fire rate
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.ChargeAttack">
+            <summary>
+            The weapon's charge attack
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.SpinAttack">
+            <summary>
+            The weapon's spin attack
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.LeapAttack">
+            <summary>
+            The weapon's leap attack
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.WallAttack">
+            <summary>
+            The weapon's wall attack
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Slots">
+            <summary>
+            The weapon's slots
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.IsSentinel">
+            <summary>
+            Is a sentinel weapon
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.OmegaAttenuation">
+            <summary>
+            The weapon's omega attenuation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Type">
+            <summary>
+            The weapon's type
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.BuildPrice">
+            <summary>
+            The weapon's build price
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.BuildTime">
+            <summary>
+            The weapon's build time
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.SkipBuildTimePrice">
+            <summary>
+            The weapon's skip build time price
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.BuildQuantity">
+            <summary>
+            Quantity unpon completion 
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.IsConsumedOnBuild">
+            <summary>
+            Whether the blueprint is consumed upon building or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Components">
+            <summary>
+            The weapon's components
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.ImageName">
+            <summary>
+            The weapon's image name
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Category">
+            <summary>
+            The weapon's category
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.IsTradable">
+            <summary>
+            If the weapon can be traded or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Patchlogs">
+            <summary>
+            The weapon's patch logs
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.ChannelingCost">
+            <summary>
+            The weapon's channeling cost
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Damage">
+            <summary>
+            The weapon's damage
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.DamageTypes">
+            <summary>
+            The weapon's damage types
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.MarketCost">
+            <summary>
+            The weapon's market cost
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Polarities">
+            <summary>
+            The weapon's polarities
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.StancePolarity">
+            <summary>
+            The weapon's stance polarity
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Tags">
+            <summary>
+            The weapon's tags
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.IsVaulted">
+            <summary>
+            If the weapon is vaulted or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.WikiaThumbnail">
+            <summary>
+            The weapon's wikia thumbnail
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.WikiaUrl">
+            <summary>
+            The weapon's wikia url
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.RivenDisposition">
+            <summary>
+            The weapon's riven disposition
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.MasteryRankRequirement">
+            <summary>
+            Required mastery rank to use the weapon
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Subtype">
+            <summary>
+            Weapon subtype
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Trigger">
+            <summary>
+            The weapon attack type (melee or ranged)
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Projectile">
+            <summary>
+            Type of projectile fired
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Rate">
+            <summary>
+            Rate of fire
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Flight">
+            <summary>
+            Weapon projectile flight speed
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Range">
+            <summary>
+            Weapon range
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Noise">
+            <summary>
+            How noisy the weapon is
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Magazine">
+            <summary>
+            Weapon magazine size
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Ammo">
+            <summary>
+            Weapon ammo type
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Reload">
+            <summary>
+            Weapon reload speed
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Impact">
+            <summary>
+            Weapon impact value
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Puncture">
+            <summary>
+            Weapon puncture value
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Slash">
+            <summary>
+            Weapon slash value
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.CritChance">
+            <summary>
+            Weapon Critical Chance
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.CriticalMultiplyer">
+            <summary>
+            Weapon Critical Multiplyer
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.StatusChance">
+            <summary>
+            Weapon Status Chance
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Thumbnail">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Weapon.Location">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.WorldState">
+            <summary>
+            World State Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.WorldTimestamp">
+            <summary>
+            World State Timestamp
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.News">
+            <summary>
+            The current news
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Events">
+            <summary>
+            The current Events
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Alerts">
+            <summary>
+            The current Events
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Sortie">
+            <summary>
+            The current Sortie
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.SyndicateMissions">
+            <summary>
+            The current Syndicate Missions
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Fissure">
+            <summary>
+            The current Fissures
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.GlobalUpgrades">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.FlashSale">
+            <summary>
+            The current Flash Sales
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Invasions">
+            <summary>
+            The current Invasions
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.DarkSectors">
+            <summary>
+            The current Dark Sectors
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.VoidTrader">
+            <summary>
+            The Void Trader data
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.DailyDeals">
+            <summary>
+            The current daily deals
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Simaris">
+            <summary>
+            The Sancturay Data
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.ConclaveChallenges">
+            <summary>
+            The current Conclave Challenges
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.PersistentEnemies">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.EarthCycle">
+            <summary>
+            The current Earth Cycle Data
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.CetusCycle">
+            <summary>
+            The current Cetus Cycle Data
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.ConstructionProgress">
+            <summary>
+            The current Construction Progress
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.ConstructionProgress">
+            <summary>
+            Construction Progress Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConstructionProgress.Id">
+            <summary>
+            Construction Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConstructionProgress.FomorianProgress">
+            <summary>
+            Current fomorian progress
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConstructionProgress.RazorbackProgress">
+            <summary>
+            Current razorback progress
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.ConstructionProgress.UnknownProgress">
+            <summary>
+            Current progress of unknown projects
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Cycle">
+            <summary>
+            Cycle Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Cycle.Id">
+            <summary>
+            Cycle Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Cycle.Expiry">
+            <summary>
+            Cycle Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Cycle.IsDay">
+            <summary>
+            If it is currently daytime or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Cycle.TimeLeft">
+            <summary>
+            Time left until nighttime
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Cycle.ShortString">
+            <summary>
+            [time]m to [Day/Night]
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.SimarisTarget">
+            <summary>
+            Simaris Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SimarisTarget.Target">
+            <summary>
+            The current Synthesis Target
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SimarisTarget.IsTargetActive">
+            <summary>
+            If the current target is active
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.SimarisTarget.AsString">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.DailyDeal">
+            <summary>
+            Daily Deal Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Item">
+            <summary>
+            The item the deal is for
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Expiry">
+            <summary>
+            Timestamp of the deal's expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.OriginalPrice">
+            <summary>
+            Original price of the item
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.SalePrice">
+            <summary>
+            Current sale price of the item 
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Total">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Sold">
+            <summary>
+            Number of items sold
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Id">
+            <summary>
+            Deal Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Eta">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.DailyDeal.Discount">
+            <summary>
+            The current discount on the item
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.VoidTrader">
+            <summary>
+            Void Trader Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.Id">
+            <summary>
+            Trader Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.Activation">
+            <summary>
+            Timestamp of Trader Activation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.Expiry">
+            <summary>
+            Timestamp of Trader Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.Character">
+            <summary>
+            Name of the Void Trader
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.Location">
+            <summary>
+            Where the trader is or is going to be
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.Inventory">
+            <summary>
+            The trader's current inventory
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.PsId">
+            <summary>
+            Id with unknown purpose
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.IsActive">
+            <summary>
+            If the trader is currently active
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.StartString">
+            <summary>
+            Unknown purpose, returns a time string
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTrader.EndString">
+            <summary>
+            Unknown purpose, returns a time string
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Alert">
+            <summary>
+            Alert Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.Id">
+            <summary>
+            Alert/Event Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.Activation">
+            <summary>
+            Alert/Event Activation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.Expiry">
+            <summary>
+            Alert/Event Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.Mission">
+            <summary>
+            Alert/Event Mission
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.HasExpired">
+            <summary>
+            If the alert has expired or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.Eta">
+            <summary>
+            Time left on the alert
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Alert.RewardTypes">
+            <summary>
+            Type of rewards
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.Item">
+            <summary>
+            Item Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Item.Count">
+            <summary>
+            Item Count
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Item.Type">
+            <summary>
+            Item Type
+            </summary>
+        </member>
         <member name="T:WarframeSharp.WarframeSharpClient">
             <summary>
-            The main Client Class
+            The Main Client Class
             </summary>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetWorldStateDataAsync(System.String)">
@@ -448,6 +1408,12 @@
             The time that the worldstate was last generated
             </summary>
             <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetWeaponsDataAsync">
+            <summary>
+            Weapon Statistics
+            </summary>
             <returns></returns>
         </member>
     </members>

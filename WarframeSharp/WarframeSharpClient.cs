@@ -212,13 +212,13 @@ namespace WarframeSharp
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
         /// <returns></returns>
-        public async Task<Simaris?> GetSancturayDataAsync(string platform = "pc")
+        public async Task<SimarisTarget?> GetSancturayDataAsync(string platform = "pc")
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/simaris").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                return JsonConvert.DeserializeObject<Simaris>(content);
+                return JsonConvert.DeserializeObject<SimarisTarget>(content);
             }
             else return null;
         }
@@ -244,7 +244,7 @@ namespace WarframeSharp
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
         /// <returns></returns>
-        public async Task<Cycle> GetCetusCycleDataAsync(string platform = "pc")
+        public async Task<Cycle?> GetCetusCycleDataAsync(string platform = "pc")
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/cetusCycle").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
@@ -260,7 +260,7 @@ namespace WarframeSharp
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
         /// <returns></returns>
-        public async Task<Cycle> GetEarthCycleDataAsync(string platform = "pc")
+        public async Task<Cycle?> GetEarthCycleDataAsync(string platform = "pc")
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/{platform}/earthCycle").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)

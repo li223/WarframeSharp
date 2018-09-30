@@ -62,7 +62,7 @@ namespace WarframeSharp
         public bool HasExpired { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Time left before it expires
         /// </summary>
         [JsonProperty("eta")]
         public string Eta { get; private set; }

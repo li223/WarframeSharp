@@ -90,7 +90,7 @@ namespace WarframeSharp
         /// The Sancturay Data
         /// </summary>
         [JsonProperty("simaris")]
-        public Simaris Simaris { get; private set; }
+        public SimarisTarget Simaris { get; private set; }
 
         /// <summary>
         /// The current Conclave Challenges
@@ -138,31 +138,31 @@ namespace WarframeSharp
         /// Current fomorian progress
         /// </summary>
         [JsonProperty("fomorianProgress")]
-        public string FomorianProgress { get; private set; }
+        public double FomorianProgress { get; private set; }
 
         /// <summary>
         /// Current razorback progress
         /// </summary>
         [JsonProperty("razorbackProgress")]
-        public string RazorbackProgress { get; private set; }
+        public double RazorbackProgress { get; private set; }
 
         /// <summary>
         /// Current progress of unknown projects
         /// </summary>
         [JsonProperty("unknownProgress")]
-        public string UnknownProgress { get; private set; }
+        public double UnknownProgress { get; private set; }
     }
 
     /// <summary>
     /// Cycle Struct
     /// </summary>
-    public sealed class Cycle
+    public struct Cycle
     {
         /// <summary>
         /// Cycle Id
         /// </summary>
         [JsonProperty("id")]
-        public int Id { get; private set; }
+        public string Id { get; private set; }
 
         /// <summary>
         /// Cycle Expiration
@@ -177,22 +177,22 @@ namespace WarframeSharp
         public bool IsDay { get; private set; }
 
         /// <summary>
-        /// Time left until day
+        /// Time left until nighttime
         /// </summary>
         [JsonProperty("timeLeft")]
         public string TimeLeft { get; private set; }
 
         /// <summary>
-        /// If the cycle data is for Cetus or not
+        /// [time]m to [Day/Night]
         /// </summary>
-        [JsonProperty("isCetus")]
-        public bool IsCetus { get; private set; } = false;
+        [JsonProperty("shortString")]
+        public string ShortString { get; private set; }
     }
 
     /// <summary>
     /// Simaris Struct
     /// </summary>
-    public struct Simaris
+    public struct SimarisTarget
     {
         /// <summary>
         /// The current Synthesis Target
@@ -297,7 +297,7 @@ namespace WarframeSharp
         public string Expiry { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Name of the Void Trader
         /// </summary>
         [JsonProperty("character")]
         public string Character { get; private set; }
@@ -315,7 +315,7 @@ namespace WarframeSharp
         public IEnumerable<string> Inventory { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Id with unknown purpose
         /// </summary>
         [JsonProperty("psId")]
         public string PsId { get; private set; }
@@ -327,13 +327,13 @@ namespace WarframeSharp
         public bool IsActive { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Unknown purpose, returns a time string
         /// </summary>
         [JsonProperty("startString")]
         public string StartString { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Unknown purpose, returns a time string
         /// </summary>
         [JsonProperty("endString")]
         public string EndString { get; private set; }
@@ -400,6 +400,24 @@ namespace WarframeSharp
 
         [JsonProperty("mission")]
         public Mission Mission { get; private set; }
+
+        /// <summary>
+        /// If the alert has expired or not
+        /// </summary>
+        [JsonProperty("expired")]
+        public bool HasExpired { get; private set; }
+
+        /// <summary>
+        /// Time left on the alert
+        /// </summary>
+        [JsonProperty("eta")]
+        public string Eta { get; private set; }
+
+        /// <summary>
+        /// Type of rewards
+        /// </summary>
+        [JsonProperty("rewardTypes")]
+        public string[] RewardTypes { get; private set; }
     }
 
     /// <summary>

@@ -63,22 +63,22 @@ namespace WarframeSharp
         public string Activation { get; private set; }
 
         /// <summary>
-        /// The number of runs
+        /// Current number of community wide runs
         /// </summary>
         [JsonProperty("count")]
         public int Count { get; private set; }
 
         /// <summary>
-        /// The number of runs required for the reward
+        /// Number of community wide runs required for invasion completion
         /// </summary>
         [JsonProperty("requiredRuns")]
         public int RequiredRuns { get; private set; }
 
         /// <summary>
-        /// The number of runs until completion
+        /// Unknown
         /// </summary>
         [JsonProperty("completion")]
-        public int Completion { get; private set; }
+        public double Completion { get; private set; }
 
         /// <summary>
         /// If the invasion has been completed or not
@@ -87,7 +87,7 @@ namespace WarframeSharp
         public bool IsCompleted { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Eta until completion
         /// </summary>
         [JsonProperty("eta")]
         public string Eta { get; private set; }
@@ -96,6 +96,6 @@ namespace WarframeSharp
         /// The types of rewards on offer
         /// </summary>
         [JsonProperty("rewardTypes")]
-        public IEnumerable<Reward> RewardTypes { get; private set; }
+        public IEnumerable<string> RewardTypes { get; private set; }
     }
 }

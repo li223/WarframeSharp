@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace WarframeSharp
 {
@@ -39,6 +38,30 @@ namespace WarframeSharp
         /// </summary>
         [JsonProperty("variants")]
         public IEnumerable<Variant> Variants { get; private set; }
+
+        /// <summary>
+        /// The sortie boss
+        /// </summary>
+        [JsonProperty("boss")]
+        public string Boss { get; private set; }
+
+        /// <summary>
+        /// Sortie faction
+        /// </summary>
+        [JsonProperty("faction")]
+        public string Faction { get; private set; }
+        
+        /// <summary>
+        /// If the sortie has expired or not
+        /// </summary>
+        [JsonProperty("expired")]
+        public bool HasExpired { get; private set; }
+
+        /// <summary>
+        /// Time until sortie expires
+        /// </summary>
+        [JsonProperty("eta")]
+        public string Eta { get; private set; }
     }
 
     /// <summary>
@@ -49,7 +72,7 @@ namespace WarframeSharp
         /// <summary>
         /// The mission's boss
         /// </summary>
-        [JsonProperty("boss")]
+        [JsonProperty("boss"), Obsolete(@"Just returns ""Deprecated"", use the boss property in the parent")]
         public string Boss { get; private set; }
 
         /// <summary>
