@@ -15,6 +15,21 @@ namespace WarframeSharp
         private HttpClient _httpClient = new HttpClient();
 
         /// <summary>
+        /// Warframe stats and general information.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<Warframe>> GetWarframesDataAsync()
+        {
+            var response = await _httpClient.GetAsync($"{_baseQuery}/warframes").ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                return JsonConvert.DeserializeObject<IEnumerable<Warframe>>(content);
+            }
+            else return null;
+        }
+
+        /// <summary>
         /// The full response from each of the other methods, useful if you want all the data with only one call.
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
