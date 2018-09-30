@@ -303,5 +303,19 @@ namespace WarframeSharp
             else return null;
         }
 
+        /// <summary>
+        /// Weapon Statistics
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IEnumerable<Weapon>> GetWeaponsDataAsync()
+        {
+            var response = await _httpClient.GetAsync($"{_baseQuery}/weapons").ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                return JsonConvert.DeserializeObject<IEnumerable<Weapon>>(content);
+            }
+            else return null;
+        }
     }
 }

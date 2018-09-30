@@ -369,6 +369,7 @@ namespace WarframeSharp
 
     public class Event : Alert { }
 #pragma warning restore CS1591
+
     /// <summary>
     /// Alert Struct
     /// </summary>
