@@ -18,6 +18,21 @@ namespace WarframeSharp
         /// Warframe stats and general information.
         /// </summary>
         /// <returns></returns>
+        public async Task<Warframe?> GetWarframeAsync(string query)
+        {
+            var response = await _httpClient.GetAsync($"{_baseQuery}/warframes/search/{query}").ConfigureAwait(false);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                return JsonConvert.DeserializeObject<Warframe>(content);
+            }
+            else return null;
+        }        
+        
+        /// <summary>
+        /// Warframe stats and general information.
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<Warframe>> GetWarframesDataAsync()
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/warframes").ConfigureAwait(false);
