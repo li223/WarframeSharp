@@ -6,9 +6,7 @@ I got bored, don't ask.
 # Example
 
 ```cs
-static void Main(string[] args) => new Program().RunAsync().GetAwaiter().GetResult();
-
-public async Task RunAsync()
+static async Task Main(string[] args)
 {
   //New instance of WarframeSharpClient
   var client = new WarframeSharpClient();
