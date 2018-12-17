@@ -634,6 +634,141 @@
             Time until expiration
             </summary>
         </member>
+        <member name="T:WarframeSharp.Warframe">
+            <summary>
+            Warframe Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Name">
+            <summary>
+            Name of the Warframe
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Url">
+            <summary>
+            Url for the warframe
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.MasteryRank">
+            <summary>
+            Required Mastery Rank to use the frame
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Health">
+            <summary>
+            Frame base health
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Shield">
+            <summary>
+            Frame base shield
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Armour">
+            <summary>
+            Frame base armour
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Power">
+            <summary>
+            Frame base power
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Speed">
+            <summary>
+            Frame base speed
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Conclave">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Polarities">
+            <summary>
+            Frame polarities
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Aura">
+            <summary>
+            Frame aura
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Description">
+            <summary>
+            Frame description
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Info">
+            <summary>
+            Frame info
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Thumbnail">
+            <summary>
+            Frame thumbnail
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Location">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.Color">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeUrl">
+            <summary>
+            Url for prime version of the warframe
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeMasteryRank">
+            <summary>
+            MR Requirement for the prime version
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeHealth">
+            <summary>
+            Base prime health
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeShield">
+            <summary>
+            Base prime shield
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeArmour">
+            <summary>
+            Base prime armour
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeSpeed">
+            <summary>
+            Base prime speed
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimePower">
+            <summary>
+            Base prime power
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeConclave">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimePolarities">
+            <summary>
+            Prime polarities
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Warframe.PrimeAura">
+            <summary>
+            Prime aura
+            </summary>
+        </member>
         <member name="T:WarframeSharp.Weapon">
             <summary>
             Weapon Struct
@@ -1283,6 +1418,18 @@
             <summary>
             The Main Client Class
             </summary>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetWarframeAsync(System.String)">
+            <summary>
+            Warframe stats and general information.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetWarframesDataAsync">
+            <summary>
+            Warframe stats and general information.
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetWorldStateDataAsync(System.String)">
             <summary>
