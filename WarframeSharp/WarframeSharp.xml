@@ -469,6 +469,26 @@
             Game fixes
             </summary>
         </member>
+        <member name="T:WarframeSharp.PlatformType">
+            <summary>
+            The type of platform
+            </summary>
+        </member>
+        <member name="F:WarframeSharp.PlatformType.PC">
+            <summary>
+            PC
+            </summary>
+        </member>
+        <member name="F:WarframeSharp.PlatformType.XB1">
+            <summary>
+            Xbox One
+            </summary>
+        </member>
+        <member name="F:WarframeSharp.PlatformType.PS4">
+            <summary>
+            Playstation 4
+            </summary>
+        </member>
         <member name="T:WarframeSharp.Reward">
             <summary>
             Reward struct
@@ -1431,130 +1451,130 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetWorldStateDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetWorldStateDataAsync(WarframeSharp.PlatformType)">
             <summary>
             The full response from each of the other methods, useful if you want all the data with only one call.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetNewsDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetNewsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Translated News items from the worldstate
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetEventsDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetEventsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Events, such as Fomorian Attacks are included here
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetAlertsDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetAlertsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Description and rewards for Alerts
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetSortieDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetSortieDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Data about the missions for the current sortie
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetSyndicateMissionsDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetSyndicateMissionsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Cycling through different nodes each day, these are a general listing of the nodes that each syndicate will use for the day.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetFissuresDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetFissuresDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Information about current Void Fissure missions
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetFlashSalesDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetFlashSalesDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Popular Deals, discounts, featured deals.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetInvasionsDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetInvasionsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Data on invasion missions, such as estimated completion time, rewards, etc.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetDarkSectorsDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetDarkSectorsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             The endpoint this method uses is deprecated and only returns a joke response.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetVoidTraderDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetVoidTraderDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Information on the current Void Trader offerings, or when he will arrive.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetDarvoDealsAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetDarvoDealsAsync(WarframeSharp.PlatformType)">
             <summary>
             Darvo's Daily Deal details
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetSancturayDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetSancturayDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Status data for Simaris' Sanctuary
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetConclaveChallengesDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetConclaveChallengesDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Data on each day and week's conclave challenges
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetCetusCycleDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetCetusCycleDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Data on the Day/night cycle for Cetus on earth
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetEarthCycleDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetEarthCycleDataAsync(WarframeSharp.PlatformType)">
             <summary>
             The current Earth day/night cycle progress.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetConstructionProgressDataAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetConstructionProgressDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Construction percentages for showing how far constructed the enemy fleets are.
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetTimestampAsync(System.String)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetTimestampAsync(WarframeSharp.PlatformType)">
             <summary>
             The time that the worldstate was last generated
             </summary>
-            <param name="platform">The platform you would like to get the data for (options: pc, xb1, ps4)</param>
+            <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetWeaponsDataAsync">
