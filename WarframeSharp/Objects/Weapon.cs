@@ -42,7 +42,7 @@ namespace WarframeSharp
         /// The weapon's magazine size
         /// </summary>
         [JsonProperty("magazineSize")]
-        public int MagazineSize { get; private set; }
+        public int? MagazineSize { get; private set; }
 
         /// <summary>
         /// The weapon's damage per second
@@ -60,7 +60,7 @@ namespace WarframeSharp
         /// The weapon's accuracy
         /// </summary>
         [JsonProperty("accuracy")]
-        public double Accuracy { get; private set; }
+        public double? Accuracy { get; private set; }
 
         /// <summary>
         /// The weapon's critical chance
@@ -72,7 +72,7 @@ namespace WarframeSharp
         /// The weapon's critical multiplier
         /// </summary>
         [JsonProperty("criticalMultiplier")]
-        public double CriticalMultiplier { get; private set; }
+        public double CritMultiplier { get; private set; }
 
         /// <summary>
         /// The weapon's proc chance
@@ -84,7 +84,7 @@ namespace WarframeSharp
         /// The weapon's fire rate
         /// </summary>
         [JsonProperty("fireRate")]
-        public double FireRate { get; private set; }
+        public double? FireRate { get; private set; }
 
         /// <summary>
         /// The weapon's charge attack
@@ -285,12 +285,6 @@ namespace WarframeSharp
         public string Projectile { get; private set; }
 
         /// <summary>
-        /// Rate of fire
-        /// </summary>
-        [JsonProperty("rate")]
-        public int Rate { get; private set; }
-
-        /// <summary>
         /// Weapon projectile flight speed
         /// </summary>
         [JsonProperty("flight")]
@@ -312,7 +306,7 @@ namespace WarframeSharp
         /// Weapon magazine size
         /// </summary>
         [JsonProperty("magazine")]
-        public int Magazine { get; private set; }
+        public int? Magazine { get; private set; }
 
         /// <summary>
         /// Weapon ammo type
@@ -324,43 +318,31 @@ namespace WarframeSharp
         /// Weapon reload speed
         /// </summary>
         [JsonProperty("reload")]
-        public string Reload { get; private set; }
+        public double Reload { get; private set; }
 
         /// <summary>
         /// Weapon impact value
         /// </summary>
         [JsonProperty("impact")]
-        public string Impact { get; private set; }
+        public double? Impact { get; private set; }
 
         /// <summary>
         /// Weapon puncture value
         /// </summary>
         [JsonProperty("puncture")]
-        public string Puncture { get; private set; }
+        public double? Puncture { get; private set; }
 
         /// <summary>
         /// Weapon slash value
         /// </summary>
         [JsonProperty("slash")]
-        public string Slash { get; private set; }
-
-        /// <summary>
-        /// Weapon Critical Chance
-        /// </summary>
-        [JsonProperty("crit_chance")]
-        public string CritChance { get; private set; }
-
-        /// <summary>
-        /// Weapon Critical Multiplyer
-        /// </summary>
-        [JsonProperty("crit_mult")]
-        public string CriticalMultiplyer { get; private set; }
+        public double? Slash { get; private set; }
 
         /// <summary>
         /// Weapon Status Chance
         /// </summary>
         [JsonProperty("status_chance")]
-        public string StatusChance { get; private set; }
+        public double? StatusChance { get; private set; }
 
         /// <summary>
         /// Unknown

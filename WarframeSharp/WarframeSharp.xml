@@ -844,7 +844,7 @@
             The weapon's critical chance
             </summary>
         </member>
-        <member name="P:WarframeSharp.Weapon.CriticalMultiplier">
+        <member name="P:WarframeSharp.Weapon.CritMultiplier">
             <summary>
             The weapon's critical multiplier
             </summary>
@@ -1024,11 +1024,6 @@
             Type of projectile fired
             </summary>
         </member>
-        <member name="P:WarframeSharp.Weapon.Rate">
-            <summary>
-            Rate of fire
-            </summary>
-        </member>
         <member name="P:WarframeSharp.Weapon.Flight">
             <summary>
             Weapon projectile flight speed
@@ -1072,16 +1067,6 @@
         <member name="P:WarframeSharp.Weapon.Slash">
             <summary>
             Weapon slash value
-            </summary>
-        </member>
-        <member name="P:WarframeSharp.Weapon.CritChance">
-            <summary>
-            Weapon Critical Chance
-            </summary>
-        </member>
-        <member name="P:WarframeSharp.Weapon.CriticalMultiplyer">
-            <summary>
-            Weapon Critical Multiplyer
             </summary>
         </member>
         <member name="P:WarframeSharp.Weapon.StatusChance">
