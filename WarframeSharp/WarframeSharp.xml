@@ -1236,7 +1236,7 @@
         </member>
         <member name="P:WarframeSharp.Cycle.ShortString">
             <summary>
-            [time]m to [Day/Night]
+            Short time string in minutes until Day/Night time
             </summary>
         </member>
         <member name="T:WarframeSharp.SimarisTarget">
@@ -1301,7 +1301,7 @@
         </member>
         <member name="P:WarframeSharp.DailyDeal.Eta">
             <summary>
-            Unknown
+            Time until deal is refreshed
             </summary>
         </member>
         <member name="P:WarframeSharp.DailyDeal.Discount">
@@ -1346,7 +1346,7 @@
         </member>
         <member name="P:WarframeSharp.VoidTrader.PsId">
             <summary>
-            Id with unknown purpose
+            Assigned Id
             </summary>
         </member>
         <member name="P:WarframeSharp.VoidTrader.IsActive">
@@ -1356,12 +1356,12 @@
         </member>
         <member name="P:WarframeSharp.VoidTrader.StartString">
             <summary>
-            Unknown purpose, returns a time string
+            Returns how long until the trader next arrives in human readable format (hours, minutes, seconds)
             </summary>
         </member>
         <member name="P:WarframeSharp.VoidTrader.EndString">
             <summary>
-            Unknown purpose, returns a time string
+            Returns how long until the trader leaves in human readable format (hours, minutes, seconds)
             </summary>
         </member>
         <member name="T:WarframeSharp.Alert">

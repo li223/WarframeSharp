@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace WarframeSharp
@@ -12,7 +13,7 @@ namespace WarframeSharp
         /// World State Timestamp
         /// </summary>
         [JsonProperty("timestamp")]
-        public string WorldTimestamp { get; private set; }
+        public DateTime WorldTimestamp { get; private set; }
 
         /// <summary>
         /// The current news
@@ -168,7 +169,7 @@ namespace WarframeSharp
         /// Cycle Expiration
         /// </summary>
         [JsonProperty("expiry")]
-        public string Expiry { get; private set; }
+        public DateTime Expiry { get; private set; }
 
         /// <summary>
         /// If it is currently daytime or not
@@ -183,7 +184,7 @@ namespace WarframeSharp
         public string TimeLeft { get; private set; }
 
         /// <summary>
-        /// [time]m to [Day/Night]
+        /// Short time string in minutes until Day/Night time
         /// </summary>
         [JsonProperty("shortString")]
         public string ShortString { get; private set; }
@@ -228,7 +229,7 @@ namespace WarframeSharp
         /// Timestamp of the deal's expiration
         /// </summary>
         [JsonProperty("expiry")]
-        public string Expiry { get; private set; }
+        public DateTime Expiry { get; private set; }
 
         /// <summary>
         /// Original price of the item
@@ -261,7 +262,7 @@ namespace WarframeSharp
         public string Id { get; private set; }
 
         /// <summary>
-        /// Unknown
+        /// Time until deal is refreshed
         /// </summary>
         [JsonProperty("eta")]
         public string Eta { get; private set; }
@@ -288,13 +289,13 @@ namespace WarframeSharp
         /// Timestamp of Trader Activation
         /// </summary>
         [JsonProperty("activation")]
-        public string Activation { get; private set; }
+        public DateTime Activation { get; private set; }
 
         /// <summary>
         /// Timestamp of Trader Expiration
         /// </summary>
         [JsonProperty("expiry")]
-        public string Expiry { get; private set; }
+        public DateTime Expiry { get; private set; }
 
         /// <summary>
         /// Name of the Void Trader
@@ -315,7 +316,7 @@ namespace WarframeSharp
         public IEnumerable<string> Inventory { get; private set; }
 
         /// <summary>
-        /// Id with unknown purpose
+        /// Assigned Id
         /// </summary>
         [JsonProperty("psId")]
         public string PsId { get; private set; }
@@ -327,19 +328,20 @@ namespace WarframeSharp
         public bool IsActive { get; private set; }
 
         /// <summary>
-        /// Unknown purpose, returns a time string
+        /// Returns how long until the trader next arrives in human readable format
         /// </summary>
         [JsonProperty("startString")]
         public string StartString { get; private set; }
 
         /// <summary>
-        /// Unknown purpose, returns a time string
+        /// Returns how long until the trader leaves in human readable format
         /// </summary>
         [JsonProperty("endString")]
         public string EndString { get; private set; }
     }
 
 #pragma warning disable CS1591
+    [Obsolete("Dark Sectors no longer exist")]
     public struct DarkSector
     {
         [JsonProperty("id")]
@@ -385,14 +387,14 @@ namespace WarframeSharp
         /// Alert/Event Activation
         /// </summary>
         [JsonProperty("activation")]
-        public string Activation { get; private set; }
+        public DateTime Activation { get; private set; }
 
         /// <summary>
         /// Alert/Event Expiration
         /// </summary>
 
         [JsonProperty("expiry")]
-        public string Expiry { get; private set; }
+        public DateTime Expiry { get; private set; }
 
         /// <summary>
         /// Alert/Event Mission
