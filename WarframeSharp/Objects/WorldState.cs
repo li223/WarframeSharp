@@ -68,11 +68,11 @@ namespace WarframeSharp
         /// </summary>
         [JsonProperty("invasions")]
         public IEnumerable<Invasion> Invasions { get; private set; }
-
+        
         /// <summary>
         /// The current Dark Sectors
         /// </summary>
-        [JsonProperty("darkSectors")]
+        [JsonProperty("darkSectors"), Obsolete("Dark Sectors no longer exist")]
         public IEnumerable<DarkSector> DarkSectors { get; private set; }
 
         /// <summary>
@@ -313,7 +313,7 @@ namespace WarframeSharp
         /// The trader's current inventory
         /// </summary>
         [JsonProperty("inventory")]
-        public IEnumerable<string> Inventory { get; private set; }
+        public IEnumerable<VoidTraderItem> Inventory { get; private set; }
 
         /// <summary>
         /// Assigned Id
@@ -367,6 +367,30 @@ namespace WarframeSharp
 
         [JsonProperty("history")]
         public IEnumerable<DarkSector?> History { get; private set; }
+    }
+
+    /// <summary>
+    /// An item in the void trader's inventory
+    /// </summary>
+    public struct VoidTraderItem
+    {
+        /// <summary>
+        /// The item name
+        /// </summary>
+        [JsonProperty("item")]
+        public string Item { get; private set; }
+
+        /// <summary>
+        /// Ducat cost
+        /// </summary>
+        [JsonProperty("ducats")]
+        public int Ducats { get; private set; }
+
+        /// <summary>
+        /// Credit Cost
+        /// </summary>
+        [JsonProperty("credits")]
+        public int Credits { get; private set; }
     }
 
     public class Event : Alert { }

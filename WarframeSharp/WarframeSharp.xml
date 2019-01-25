@@ -1356,12 +1356,32 @@
         </member>
         <member name="P:WarframeSharp.VoidTrader.StartString">
             <summary>
-            Returns how long until the trader next arrives in human readable format (hours, minutes, seconds)
+            Returns how long until the trader next arrives in human readable format
             </summary>
         </member>
         <member name="P:WarframeSharp.VoidTrader.EndString">
             <summary>
-            Returns how long until the trader leaves in human readable format (hours, minutes, seconds)
+            Returns how long until the trader leaves in human readable format
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.VoidTraderItem">
+            <summary>
+            An item in the void trader's inventory
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTraderItem.Item">
+            <summary>
+            The item name
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTraderItem.Ducats">
+            <summary>
+            Ducat cost
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VoidTraderItem.Credits">
+            <summary>
+            Credit Cost
             </summary>
         </member>
         <member name="T:WarframeSharp.Alert">
