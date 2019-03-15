@@ -274,13 +274,13 @@ namespace WarframeSharp
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for</param>
         /// <returns></returns>
-        public async Task<Cycle?> GetCetusCycleDataAsync(PlatformType platform = PlatformType.PC)
+        public async Task<CetusCycle?> GetCetusCycleDataAsync(PlatformType platform = PlatformType.PC)
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/{platform.ToString().ToLower()}/cetusCycle").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                return JsonConvert.DeserializeObject<Cycle>(content);
+                return JsonConvert.DeserializeObject<CetusCycle>(content);
             }
             else return null;
         }
@@ -290,13 +290,13 @@ namespace WarframeSharp
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for</param>
         /// <returns></returns>
-        public async Task<Cycle?> GetEarthCycleDataAsync(PlatformType platform = PlatformType.PC)
+        public async Task<EarthCycle?> GetEarthCycleDataAsync(PlatformType platform = PlatformType.PC)
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/{platform.ToString().ToLower()}/earthCycle").ConfigureAwait(false);
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                return JsonConvert.DeserializeObject<Cycle>(content);
+                return JsonConvert.DeserializeObject<EarthCycle>(content);
             }
             else return null;
         }

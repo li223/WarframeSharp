@@ -109,19 +109,31 @@ namespace WarframeSharp
         /// The current Earth Cycle Data
         /// </summary>
         [JsonProperty("earthCycle")]
-        public Cycle EarthCycle { get; private set; }
+        public EarthCycle EarthCycle { get; private set; }
 
         /// <summary>
         /// The current Cetus Cycle Data
         /// </summary>
         [JsonProperty("cetusCycle")]
-        public Cycle CetusCycle { get; private set; }
+        public CetusCycle CetusCycle { get; private set; }
+
+        /// <summary>
+        /// The current Vallis Cycle Data
+        /// </summary>
+        [JsonProperty("vallisCycle")]
+        public VallisCycle VallisCycle { get; private set; }
 
         /// <summary>
         /// The current Construction Progress
         /// </summary>
         [JsonProperty("constructionProgress")]
         public ConstructionProgress ConstructionProgress { get; private set; }
+
+        /// <summary>
+        /// Current Nightwave Alert
+        /// </summary>
+        [JsonProperty("nightwave")]
+        public Nightwave Nightwave { get; private set; }
     }
 
     /// <summary>
@@ -155,9 +167,9 @@ namespace WarframeSharp
     }
 
     /// <summary>
-    /// Cycle Struct
+    /// Earth Cycle Struct
     /// </summary>
-    public struct Cycle
+    public struct EarthCycle
     {
         /// <summary>
         /// Cycle Id
@@ -182,9 +194,75 @@ namespace WarframeSharp
         /// </summary>
         [JsonProperty("timeLeft")]
         public string TimeLeft { get; private set; }
+    }
+
+    /// <summary>
+    /// Cetus Cycle Struct
+    /// </summary>
+    public struct CetusCycle
+    {
+        /// <summary>
+        /// Cycle Id
+        /// </summary>
+        [JsonProperty("id")]
+        public string Id { get; private set; }
+
+        /// <summary>
+        /// Cycle Expiration
+        /// </summary>
+        [JsonProperty("expiry")]
+        public DateTime Expiry { get; private set; }
+
+        /// <summary>
+        /// If the data is for cetus or not
+        /// </summary>
+        [JsonProperty("isCetus")]
+        public bool IsCetus { get; private set; }
+
+        /// <summary>
+        /// Time left until nighttime
+        /// </summary>
+        [JsonProperty("timeLeft")]
+        public string TimeLeft { get; private set; }
 
         /// <summary>
         /// Short time string in minutes until Day/Night time
+        /// </summary>
+        [JsonProperty("shortString")]
+        public string ShortString { get; private set; }
+    }
+
+    /// <summary>
+    /// Vallis Cycle Struct
+    /// </summary>
+    public struct VallisCycle
+    {
+        /// <summary>
+        /// Cycle Id
+        /// </summary>
+        [JsonProperty("id")]
+        public string Id { get; private set; }
+
+        /// <summary>
+        /// Cycle Expiration
+        /// </summary>
+        [JsonProperty("expiry")]
+        public DateTime Expiry { get; private set; }
+
+        /// <summary>
+        /// If the current cycle is the warm cycle or not
+        /// </summary>
+        [JsonProperty("isWarm")]
+        public bool IsWarm { get; private set; }
+
+        /// <summary>
+        /// Time left until Warm/Cold
+        /// </summary>
+        [JsonProperty("timeLeft")]
+        public string TimeLeft { get; private set; }
+
+        /// <summary>
+        /// Short time string in minutes until Warm/Cold
         /// </summary>
         [JsonProperty("shortString")]
         public string ShortString { get; private set; }

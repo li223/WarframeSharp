@@ -429,6 +429,101 @@
             News in markdown format
             </summary>
         </member>
+        <member name="T:WarframeSharp.Nightwave">
+            <summary>
+            Nightwave Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Id">
+            <summary>
+            Nightwave Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Activation">
+            <summary>
+            Timestamp of Nightwave Activation
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Expiry">
+            <summary>
+            Timestamp of Nightwave Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Params">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.RewardTypes">
+            <summary>
+            Types of rewards
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Season">
+            <summary>
+            Current nightwave season
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Tag">
+            <summary>
+            Name of the Nightwave Syndicate
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.Phase">
+            <summary>
+            Current nightwave phase
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.PossibleChallenges">
+            <summary>
+            All possible challenges
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Nightwave.ActiveChallenges">
+            <summary>
+            Current nightwave challenges
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.NightwaveChallenge">
+            <summary>
+            Nightwave Challenge Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.Id">
+            <summary>
+            Challenge Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.Description">
+            <summary>
+            Challenge Description
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.Expiry">
+            <summary>
+            Challenge Expiration Timestamp
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.Reputation">
+            <summary>
+            Amount of reputation rewarded on completion 
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.Title">
+            <summary>
+            Challenge title
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.IsDaily">
+            <summary>
+            If the challenge is a daily challenge
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.NightwaveChallenge.IsElite">
+            <summary>
+            If the challenge is an elite challenge
+            </summary>
+        </member>
         <member name="T:WarframeSharp.Patchlog">
             <summary>
             Patchlog struct
@@ -1179,9 +1274,19 @@
             The current Cetus Cycle Data
             </summary>
         </member>
+        <member name="P:WarframeSharp.WorldState.VallisCycle">
+            <summary>
+            The current Vallis Cycle Data
+            </summary>
+        </member>
         <member name="P:WarframeSharp.WorldState.ConstructionProgress">
             <summary>
             The current Construction Progress
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.WorldState.Nightwave">
+            <summary>
+            Current Nightwave Alert
             </summary>
         </member>
         <member name="T:WarframeSharp.ConstructionProgress">
@@ -1209,34 +1314,89 @@
             Current progress of unknown projects
             </summary>
         </member>
-        <member name="T:WarframeSharp.Cycle">
+        <member name="T:WarframeSharp.EarthCycle">
             <summary>
-            Cycle Struct
+            Earth Cycle Struct
             </summary>
         </member>
-        <member name="P:WarframeSharp.Cycle.Id">
+        <member name="P:WarframeSharp.EarthCycle.Id">
             <summary>
             Cycle Id
             </summary>
         </member>
-        <member name="P:WarframeSharp.Cycle.Expiry">
+        <member name="P:WarframeSharp.EarthCycle.Expiry">
             <summary>
             Cycle Expiration
             </summary>
         </member>
-        <member name="P:WarframeSharp.Cycle.IsDay">
+        <member name="P:WarframeSharp.EarthCycle.IsDay">
             <summary>
             If it is currently daytime or not
             </summary>
         </member>
-        <member name="P:WarframeSharp.Cycle.TimeLeft">
+        <member name="P:WarframeSharp.EarthCycle.TimeLeft">
             <summary>
             Time left until nighttime
             </summary>
         </member>
-        <member name="P:WarframeSharp.Cycle.ShortString">
+        <member name="T:WarframeSharp.CetusCycle">
+            <summary>
+            Cetus Cycle Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.CetusCycle.Id">
+            <summary>
+            Cycle Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.CetusCycle.Expiry">
+            <summary>
+            Cycle Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.CetusCycle.IsCetus">
+            <summary>
+            If the data is for cetus or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.CetusCycle.TimeLeft">
+            <summary>
+            Time left until nighttime
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.CetusCycle.ShortString">
             <summary>
             Short time string in minutes until Day/Night time
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.VallisCycle">
+            <summary>
+            Vallis Cycle Struct
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VallisCycle.Id">
+            <summary>
+            Cycle Id
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VallisCycle.Expiry">
+            <summary>
+            Cycle Expiration
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VallisCycle.IsWarm">
+            <summary>
+            If the current cycle is the warm cycle or not
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VallisCycle.TimeLeft">
+            <summary>
+            Time left until Warm/Cold
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.VallisCycle.ShortString">
+            <summary>
+            Short time string in minutes until Warm/Cold
             </summary>
         </member>
         <member name="T:WarframeSharp.SimarisTarget">
