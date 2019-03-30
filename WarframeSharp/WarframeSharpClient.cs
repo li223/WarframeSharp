@@ -97,6 +97,7 @@ namespace WarframeSharp
         /// </summary>
         /// <param name="platform">The platform you would like to get the data for</param>
         /// <returns></returns>
+        [Obsolete("Alerts have been replaced by Nightwave")]
         public async Task<IEnumerable<Alert>> GetAlertsDataAsync(PlatformType platform = PlatformType.PC)
         {
             var response = await _httpClient.GetAsync($"{_baseQuery}/{platform.ToString().ToLower()}/alerts").ConfigureAwait(false);
