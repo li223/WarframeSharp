@@ -1,6 +1,3 @@
-# Notice
-This repo is now archived as I am now looking at helping with the offical wrapper instead, located [here](https://github.com/WFCD/Warframe.NET)
-
 # WarframeSharp
 Basic wrapper for https://api.warframestat.us
 
