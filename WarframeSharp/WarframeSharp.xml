@@ -1748,5 +1748,20 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetVallisCycleAsync(WarframeSharp.PlatformType)">
+            <summary>
+            Get the current state of the Orb Vallis
+            </summary>
+            <param name="platform"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetAsync``1(System.String)">
+            <summary>
+            Gets a generic endpoint response.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="endpoint"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
