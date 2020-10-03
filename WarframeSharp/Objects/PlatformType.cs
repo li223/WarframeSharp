@@ -16,6 +16,10 @@
         /// <summary>
         /// Playstation 4
         /// </summary>
-        PS4 = 2
+        PS4 = 2,
+        /// <summary>
+        /// Nintendo Switch
+        /// </summary>
+        SWI = 3
     }
 }

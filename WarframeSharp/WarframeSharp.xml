@@ -4,6 +4,41 @@
         <name>WarframeSharp</name>
     </assembly>
     <members>
+        <member name="P:WarframeSharp.Arbitration.Activation">
+            <summary>
+            When the Arbitration becomes active
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Arbitration.Expiry">
+            <summary>
+            When the Arbitration becomes inactive
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Arbitration.Enemy">
+            <summary>
+            A Faction in Warframe
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Arbitration.Type">
+            <summary>
+            Mission type
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Arbitration.Archwing">
+            <summary>
+            Whether or not this mission requires archwing
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Arbitration.Sharkwing">
+            <summary>
+            Whether or not this mission requires sharkwing
+            </summary>
+        </member>
+        <member name="P:WarframeSharp.Arbitration.Node">
+            <summary>
+            Plain name for the node
+            </summary>
+        </member>
         <member name="T:WarframeSharp.Component">
             <summary>
             Component Struct
@@ -102,6 +137,11 @@
         <member name="P:WarframeSharp.ConclaveChallenge.AsString">
             <summary>
             Full Challenge Description
+            </summary>
+        </member>
+        <member name="T:WarframeSharp.EnemyType">
+            <summary>
+            The type of enemy
             </summary>
         </member>
         <member name="T:WarframeSharp.Fissure">
@@ -582,6 +622,11 @@
         <member name="F:WarframeSharp.PlatformType.PS4">
             <summary>
             Playstation 4
+            </summary>
+        </member>
+        <member name="F:WarframeSharp.PlatformType.SWI">
+            <summary>
+            Nintendo Switch
             </summary>
         </member>
         <member name="T:WarframeSharp.Reward">
@@ -1630,6 +1675,13 @@
             <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetNightwaveStateDataAsync(WarframeSharp.PlatformType)">
+            <summary>
+            The Current cycle and challenges of Nightwave, a battle-pass-esque rotation and challenge system
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetEventsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Events, such as Fomorian Attacks are included here
@@ -1640,6 +1692,13 @@
         <member name="M:WarframeSharp.WarframeSharpClient.GetAlertsDataAsync(WarframeSharp.PlatformType)">
             <summary>
             Description and rewards for Alerts
+            </summary>
+            <param name="platform">The platform you would like to get the data for</param>
+            <returns></returns>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.GetArbitrationDataAsync(WarframeSharp.PlatformType)">
+            <summary>
+            Description of the currently active arbitration
             </summary>
             <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
