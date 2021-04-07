@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace WarframeSharp
 {
     /// <summary>
     /// The Sortie Struct
     /// </summary>
-    public struct Sortie
+    public class Sortie
     {
         /// <summary>
         /// Sortie Id
@@ -50,7 +50,7 @@ namespace WarframeSharp
         /// </summary>
         [JsonProperty("faction")]
         public string Faction { get; private set; }
-        
+
         /// <summary>
         /// If the sortie has expired or not
         /// </summary>
@@ -67,7 +67,7 @@ namespace WarframeSharp
     /// <summary>
     /// Variant Struct
     /// </summary>
-    public struct Variant
+    public class Variant
     {
         /// <summary>
         /// The mission's boss

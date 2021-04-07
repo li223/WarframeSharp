@@ -3,9 +3,9 @@
 namespace WarframeSharp
 {
     /// <summary>
-    /// Patchlog struct
+    /// Patchlog class
     /// </summary>
-    public struct Patchlog
+    public class Patchlog
     {
         /// <summary>
         /// Patchlog title

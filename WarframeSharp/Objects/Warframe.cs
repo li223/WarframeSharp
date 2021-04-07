@@ -5,7 +5,7 @@ namespace WarframeSharp
     /// <summary>
     /// Warframe Struct
     /// </summary>
-    public struct Warframe
+    public class Warframe
     {
         /// <summary>
         /// Name of the Warframe

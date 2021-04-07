@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeSharp
 {
     /// <summary>
     /// Invasion Struct
     /// </summary>
-    public struct Invasion
+    public class Invasion
     {
         /// <summary>
         /// Invasion Id

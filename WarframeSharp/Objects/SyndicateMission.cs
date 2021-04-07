@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeSharp
 {
     /// <summary>
     /// Syndicate Mission Struct
     /// </summary>
-    public struct SyndicateMission
+    public class SyndicateMission
     {
         /// <summary>
         /// Syndicate Mission Id

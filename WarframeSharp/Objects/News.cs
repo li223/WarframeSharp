@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeSharp
 {
     /// <summary>
-    /// News struct
+    /// News class
     /// </summary>
-    public struct News
+    public class News
     {
         /// <summary>
         /// News Id

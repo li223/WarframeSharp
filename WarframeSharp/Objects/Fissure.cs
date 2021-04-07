@@ -5,7 +5,7 @@ namespace WarframeSharp
     /// <summary>
     /// Fissure Struct
     /// </summary>
-    public struct Fissure
+    public class Fissure
     {
         /// <summary>
         /// Fissure Id

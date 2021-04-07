@@ -3,9 +3,9 @@
 namespace WarframeSharp
 {
     /// <summary>
-    /// Flash sale struct
+    /// Flash sale class
     /// </summary>
-    public struct FlashSale
+    public class FlashSale
     {
         /// <summary>
         /// Flash sale Id

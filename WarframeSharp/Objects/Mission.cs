@@ -5,7 +5,7 @@ namespace WarframeSharp
     /// <summary>
     /// Mission Struct
     /// </summary>
-    public struct Mission
+    public class Mission
     {
         /// <summary>
         /// Node or planet the mission is on
@@ -24,7 +24,7 @@ namespace WarframeSharp
         /// </summary>
         [JsonProperty("faction")]
         public string Faction { get; private set; }
-        
+
         /// <summary>
         /// Mission reward
         /// </summary>

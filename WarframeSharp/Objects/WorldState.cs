@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 
 namespace WarframeSharp
 {
     /// <summary>
     /// World State Struct
     /// </summary>
-    public struct WorldState
+    public class WorldState
     {
         /// <summary>
         /// World State Timestamp
@@ -70,7 +68,7 @@ namespace WarframeSharp
         /// </summary>
         [JsonProperty("invasions")]
         public IEnumerable<Invasion> Invasions { get; private set; }
-        
+
         /// <summary>
         /// The current Dark Sectors
         /// </summary>
@@ -126,10 +124,10 @@ namespace WarframeSharp
         public VallisCycle VallisCycle { get; private set; }
 
         /// <summary>
-        /// The current Construction Progress
+        /// The current Conclassion Progress
         /// </summary>
-        [JsonProperty("constructionProgress")]
-        public ConstructionProgress ConstructionProgress { get; private set; }
+        [JsonProperty("conclassionProgress")]
+        public ConclassionProgress ConclassionProgress { get; private set; }
 
         /// <summary>
         /// Current Nightwave Alert
@@ -139,12 +137,12 @@ namespace WarframeSharp
     }
 
     /// <summary>
-    /// Construction Progress Struct
+    /// Conclassion Progress Struct
     /// </summary>
-    public struct ConstructionProgress
+    public class ConclassionProgress
     {
         /// <summary>
-        /// Construction Id
+        /// Conclassion Id
         /// </summary>
         [JsonProperty("id")]
         public string Id { get; private set; }
@@ -171,7 +169,7 @@ namespace WarframeSharp
     /// <summary>
     /// Earth Cycle Struct
     /// </summary>
-    public struct EarthCycle
+    public class EarthCycle
     {
         /// <summary>
         /// Cycle Id
@@ -201,7 +199,7 @@ namespace WarframeSharp
     /// <summary>
     /// Cetus Cycle Struct
     /// </summary>
-    public struct CetusCycle
+    public class CetusCycle
     {
         /// <summary>
         /// Cycle Id
@@ -237,7 +235,7 @@ namespace WarframeSharp
     /// <summary>
     /// Vallis Cycle Struct
     /// </summary>
-    public struct VallisCycle
+    public class VallisCycle
     {
         /// <summary>
         /// Cycle Id
@@ -273,7 +271,7 @@ namespace WarframeSharp
     /// <summary>
     /// Simaris Struct
     /// </summary>
-    public struct SimarisTarget
+    public class SimarisTarget
     {
         /// <summary>
         /// The current Synthesis Target
@@ -297,7 +295,7 @@ namespace WarframeSharp
     /// <summary>
     /// Daily Deal Struct
     /// </summary>
-    public struct DailyDeal
+    public class DailyDeal
     {
         /// <summary>
         /// The item the deal is for
@@ -357,7 +355,7 @@ namespace WarframeSharp
     /// <summary>
     /// Void Trader Struct
     /// </summary>
-    public struct VoidTrader
+    public class VoidTrader
     {
         /// <summary>
         /// Trader Id
@@ -422,7 +420,7 @@ namespace WarframeSharp
 
 #pragma warning disable CS1591
     [Obsolete("Dark Sectors no longer exist")]
-    public struct DarkSector
+    public class DarkSector
     {
         [JsonProperty("id")]
         public string Id { get; private set; }
@@ -452,7 +450,7 @@ namespace WarframeSharp
     /// <summary>
     /// An item in the void trader's inventory
     /// </summary>
-    public struct VoidTraderItem
+    public class VoidTraderItem
     {
         /// <summary>
         /// The item name
@@ -529,7 +527,7 @@ namespace WarframeSharp
     /// <summary>
     /// Item Struct
     /// </summary>
-    public struct Item
+    public class Item
     {
         /// <summary>
         /// Item Count

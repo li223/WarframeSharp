@@ -5,7 +5,7 @@ namespace WarframeSharp
     /// <summary>
     /// Conclave Challenge Struct
     /// </summary>
-    public struct ConclaveChallenge
+    public class ConclaveChallenge
     {
         /// <summary>
         /// Challenge Id

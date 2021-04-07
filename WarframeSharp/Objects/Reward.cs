@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeSharp
 {
     /// <summary>
-    /// Reward struct
+    /// Reward class
     /// </summary>
-    public struct Reward
+    public class Reward
     {
         /// <summary>
         /// Singular rewarded items (IE: Helments)

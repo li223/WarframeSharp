@@ -201,7 +201,7 @@
         </member>
         <member name="T:WarframeSharp.FlashSale">
             <summary>
-            Flash sale struct
+            Flash sale class
             </summary>
         </member>
         <member name="P:WarframeSharp.FlashSale.Id">
@@ -406,7 +406,7 @@
         </member>
         <member name="T:WarframeSharp.News">
             <summary>
-            News struct
+            News class
             </summary>
         </member>
         <member name="P:WarframeSharp.News.Id">
@@ -566,7 +566,7 @@
         </member>
         <member name="T:WarframeSharp.Patchlog">
             <summary>
-            Patchlog struct
+            Patchlog class
             </summary>
         </member>
         <member name="P:WarframeSharp.Patchlog.Name">
@@ -631,7 +631,7 @@
         </member>
         <member name="T:WarframeSharp.Reward">
             <summary>
-            Reward struct
+            Reward class
             </summary>
         </member>
         <member name="P:WarframeSharp.Reward.Items">
@@ -1324,9 +1324,9 @@
             The current Vallis Cycle Data
             </summary>
         </member>
-        <member name="P:WarframeSharp.WorldState.ConstructionProgress">
+        <member name="P:WarframeSharp.WorldState.ConclassionProgress">
             <summary>
-            The current Construction Progress
+            The current Conclassion Progress
             </summary>
         </member>
         <member name="P:WarframeSharp.WorldState.Nightwave">
@@ -1334,27 +1334,27 @@
             Current Nightwave Alert
             </summary>
         </member>
-        <member name="T:WarframeSharp.ConstructionProgress">
+        <member name="T:WarframeSharp.ConclassionProgress">
             <summary>
-            Construction Progress Struct
+            Conclassion Progress Struct
             </summary>
         </member>
-        <member name="P:WarframeSharp.ConstructionProgress.Id">
+        <member name="P:WarframeSharp.ConclassionProgress.Id">
             <summary>
-            Construction Id
+            Conclassion Id
             </summary>
         </member>
-        <member name="P:WarframeSharp.ConstructionProgress.FomorianProgress">
+        <member name="P:WarframeSharp.ConclassionProgress.FomorianProgress">
             <summary>
             Current fomorian progress
             </summary>
         </member>
-        <member name="P:WarframeSharp.ConstructionProgress.RazorbackProgress">
+        <member name="P:WarframeSharp.ConclassionProgress.RazorbackProgress">
             <summary>
             Current razorback progress
             </summary>
         </member>
-        <member name="P:WarframeSharp.ConstructionProgress.UnknownProgress">
+        <member name="P:WarframeSharp.ConclassionProgress.UnknownProgress">
             <summary>
             Current progress of unknown projects
             </summary>
@@ -1787,9 +1787,9 @@
             <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>
         </member>
-        <member name="M:WarframeSharp.WarframeSharpClient.GetConstructionProgressDataAsync(WarframeSharp.PlatformType)">
+        <member name="M:WarframeSharp.WarframeSharpClient.GetConclassionProgressDataAsync(WarframeSharp.PlatformType)">
             <summary>
-            Construction percentages for showing how far constructed the enemy fleets are.
+            Conclassion percentages for showing how far conclassed the enemy fleets are.
             </summary>
             <param name="platform">The platform you would like to get the data for</param>
             <returns></returns>

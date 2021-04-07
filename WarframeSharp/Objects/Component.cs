@@ -5,7 +5,7 @@ namespace WarframeSharp
     /// <summary>
     /// Component Struct
     /// </summary>
-    public struct Component
+    public class Component
     {
         /// <summary>
         /// Url path of the component

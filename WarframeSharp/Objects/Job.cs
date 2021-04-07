@@ -5,7 +5,7 @@ namespace WarframeSharp
     /// <summary>
     /// Job Struct
     /// </summary>
-    public struct Job
+    public class Job
     {
         /// <summary>
         /// Job Id

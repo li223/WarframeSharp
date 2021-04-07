@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeSharp
 {
     /// <summary>
     /// Nightwave Struct
     /// </summary>
-    public struct Nightwave
+    public class Nightwave
     {
         /// <summary>
         /// Nightwave Id
@@ -72,7 +72,7 @@ namespace WarframeSharp
     /// <summary>
     /// Nightwave Challenge Struct
     /// </summary>
-    public struct NightwaveChallenge
+    public class NightwaveChallenge
     {
         /// <summary>
         /// Challenge Id

@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace WarframeSharp
 {
     /// <summary>
     /// Weapon Struct
     /// </summary>
-    public struct Weapon
+    public class Weapon
     {
         /// <summary>
         /// Url path of the weapon

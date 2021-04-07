@@ -251,11 +251,11 @@ namespace WarframeSharp.Tests
         [InlineData(PlatformType.PS4)]
         [InlineData(PlatformType.XB1)]
         [InlineData(PlatformType.SWI)]
-        public async Task GetConstructionProgressDataAsync_ValidPlatform_ReturnConstructionProgressData(
+        public async Task GetConclassionProgressDataAsync_ValidPlatform_ReturnConclassionProgressData(
             PlatformType platform)
         {
             // Act
-            var results = await _client.GetConstructionProgressDataAsync(platform);
+            var results = await _client.GetConclassionProgressDataAsync(platform);
 
             // Assert
             results.Should().NotBeNull();
