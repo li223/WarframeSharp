@@ -11,13 +11,13 @@ namespace WarframeSharp
         /// Job Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Job Type
         /// </summary>
         [JsonProperty("type")]
-        public string Type { get; private set; }
+        public string? Type { get; private set; }
 
         /// <summary>
         /// Enemy level, min and max

@@ -11,19 +11,19 @@ namespace WarframeSharp
         /// Url path of the component
         /// </summary>
         [JsonProperty("uniqueName")]
-        public string UniqueName { get; private set; }
+        public string? UniqueName { get; private set; }
 
         /// <summary>
         /// Component name
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; private set; }
+        public string? Name { get; private set; }
 
         /// <summary>
         /// Component description
         /// </summary>
         [JsonProperty("description")]
-        public string Description { get; private set; }
+        public string? Description { get; private set; }
 
         /// <summary>
         /// Component item count
@@ -41,6 +41,6 @@ namespace WarframeSharp
         /// Component image name
         /// </summary>
         [JsonProperty("imageName")]
-        public string ImageName { get; private set; }
+        public string? ImageName { get; private set; }
     }
 }

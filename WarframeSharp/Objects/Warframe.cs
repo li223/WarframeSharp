@@ -11,19 +11,19 @@ namespace WarframeSharp
         /// Name of the Warframe
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; private set; }
+        public string? Name { get; private set; }
 
         /// <summary>
         /// Url for the warframe
         /// </summary>
         [JsonProperty("url")]
-        public string Url { get; private set; }
+        public string? Url { get; private set; }
 
         /// <summary>
         /// Required Mastery Rank to use the frame
         /// </summary>
         [JsonProperty("mr")]
-        public string MasteryRank { get; private set; }
+        public string? MasteryRank { get; private set; }
 
         /// <summary>
         /// Frame base health
@@ -59,7 +59,7 @@ namespace WarframeSharp
         /// Unknown
         /// </summary>
         [JsonProperty("conclave")]
-        public string Conclave { get; private set; }
+        public string? Conclave { get; private set; }
 
         /// <summary>
         /// Frame polarities
@@ -71,31 +71,31 @@ namespace WarframeSharp
         /// Frame aura
         /// </summary>
         [JsonProperty("aura")]
-        public string Aura { get; private set; }
+        public string? Aura { get; private set; }
 
         /// <summary>
         /// Frame description
         /// </summary>
         [JsonProperty("description")]
-        public string Description { get; private set; }
+        public string? Description { get; private set; }
 
         /// <summary>
         /// Frame info
         /// </summary>
         [JsonProperty("info")]
-        public string Info { get; private set; }
+        public string? Info { get; private set; }
 
         /// <summary>
         /// Frame thumbnail
         /// </summary>
         [JsonProperty("thumbnail")]
-        public string Thumbnail { get; private set; }
+        public string? Thumbnail { get; private set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         [JsonProperty("location")]
-        public string Location { get; private set; }
+        public string? Location { get; private set; }
 
         /// <summary>
         /// Unknown
@@ -107,7 +107,7 @@ namespace WarframeSharp
         /// Url for prime version of the warframe
         /// </summary>
         [JsonProperty("primeUrl")]
-        public string PrimeUrl { get; private set; }
+        public string? PrimeUrl { get; private set; }
 
         /// <summary>
         /// MR Requirement for the prime version
@@ -119,37 +119,37 @@ namespace WarframeSharp
         /// Base prime health
         /// </summary>
         [JsonProperty("primeHealth")]
-        public string PrimeHealth { get; private set; }
+        public string? PrimeHealth { get; private set; }
 
         /// <summary>
         /// Base prime shield
         /// </summary>
         [JsonProperty("primeShield")]
-        public string PrimeShield { get; private set; }
+        public string? PrimeShield { get; private set; }
 
         /// <summary>
         /// Base prime armour
         /// </summary>
         [JsonProperty("primeArmor")]
-        public string PrimeArmour { get; private set; }
+        public string? PrimeArmour { get; private set; }
 
         /// <summary>
         /// Base prime speed
         /// </summary>
         [JsonProperty("primeSpeed")]
-        public string PrimeSpeed { get; private set; }
+        public string? PrimeSpeed { get; private set; }
 
         /// <summary>
         /// Base prime power
         /// </summary>
         [JsonProperty("primePower")]
-        public string PrimePower { get; private set; }
+        public string? PrimePower { get; private set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         [JsonProperty("primeConclave")]
-        public string PrimeConclave { get; private set; }
+        public string? PrimeConclave { get; private set; }
 
         /// <summary>
         /// Prime polarities
@@ -161,6 +161,6 @@ namespace WarframeSharp
         /// Prime aura
         /// </summary>
         [JsonProperty("primeAura")]
-        public string PrimeAura { get; private set; }
+        public string? PrimeAura { get; private set; }
     }
 }

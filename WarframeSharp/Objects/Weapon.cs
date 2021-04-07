@@ -12,13 +12,13 @@ namespace WarframeSharp
         /// Url path of the weapon
         /// </summary>
         [JsonProperty("uniqueName")]
-        public string UniqueName { get; private set; }
+        public string? UniqueName { get; private set; }
 
         /// <summary>
         /// The weapon's name
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; private set; }
+        public string? Name { get; private set; }
 
         /// <summary>
         /// Seconds needed between shots
@@ -30,7 +30,7 @@ namespace WarframeSharp
         /// Damage Per Shot
         /// </summary>
         [JsonProperty("damagePerShot")]
-        public double[] DamagePerShot { get; private set; }
+        public double[]? DamagePerShot { get; private set; }
 
         /// <summary>
         /// The weapon's reload time
@@ -54,7 +54,7 @@ namespace WarframeSharp
         /// The weapon's description
         /// </summary>
         [JsonProperty("description")]
-        public string Description { get; private set; }
+        public string? Description { get; private set; }
 
         /// <summary>
         /// The weapon's accuracy
@@ -132,7 +132,7 @@ namespace WarframeSharp
         /// The weapon's type
         /// </summary>
         [JsonProperty("type")]
-        public string Type { get; private set; }
+        public string? Type { get; private set; }
 
         /// <summary>
         /// The weapon's build price
@@ -168,19 +168,19 @@ namespace WarframeSharp
         /// The weapon's components
         /// </summary>
         [JsonProperty("components")]
-        public IEnumerable<Component> Components { get; private set; }
+        public IEnumerable<Component>? Components { get; private set; }
 
         /// <summary>
         /// The weapon's image name
         /// </summary>
         [JsonProperty("imageName")]
-        public string ImageName { get; private set; }
+        public string? ImageName { get; private set; }
 
         /// <summary>
         /// The weapon's category
         /// </summary>
         [JsonProperty("category")]
-        public string Category { get; private set; }
+        public string? Category { get; private set; }
 
         /// <summary>
         /// If the weapon can be traded or not
@@ -192,7 +192,7 @@ namespace WarframeSharp
         /// The weapon's patch logs
         /// </summary>
         [JsonProperty("patchlogs")]
-        public IEnumerable<Patchlog> Patchlogs { get; private set; }
+        public IEnumerable<Patchlog>? Patchlogs { get; private set; }
 
         /// <summary>
         /// The weapon's channeling cost
@@ -204,13 +204,13 @@ namespace WarframeSharp
         /// The weapon's damage
         /// </summary>
         [JsonProperty("damage")]
-        public string Damage { get; private set; }
+        public string? Damage { get; private set; }
 
         /// <summary>
         /// The weapon's damage types
         /// </summary>
         [JsonProperty("damageTypes")]
-        public Dictionary<string, double> DamageTypes { get; private set; }
+        public Dictionary<string, double>? DamageTypes { get; private set; }
 
         /// <summary>
         /// The weapon's market cost
@@ -222,19 +222,19 @@ namespace WarframeSharp
         /// The weapon's polarities
         /// </summary>
         [JsonProperty("polarities")]
-        public string[] Polarities { get; private set; }
+        public string[]? Polarities { get; private set; }
 
         /// <summary>
         /// The weapon's stance polarity
         /// </summary>
         [JsonProperty("stancePolarity")]
-        public string StancePolarity { get; private set; }
+        public string? StancePolarity { get; private set; }
 
         /// <summary>
         /// The weapon's tags
         /// </summary>
         [JsonProperty("tags")]
-        public string[] Tags { get; private set; }
+        public string[]? Tags { get; private set; }
 
         /// <summary>
         /// If the weapon is vaulted or not
@@ -246,13 +246,13 @@ namespace WarframeSharp
         /// The weapon's wikia thumbnail
         /// </summary>
         [JsonProperty("wikiaThumbnail")]
-        public string WikiaThumbnail { get; private set; }
+        public string? WikiaThumbnail { get; private set; }
 
         /// <summary>
         /// The weapon's wikia url
         /// </summary>
         [JsonProperty("wikiaUrl")]
-        public string WikiaUrl { get; private set; }
+        public string? WikiaUrl { get; private set; }
 
         /// <summary>
         /// The weapon's riven disposition
@@ -270,37 +270,37 @@ namespace WarframeSharp
         /// Weapon subtype
         /// </summary>
         [JsonProperty("subtype")]
-        public string Subtype { get; private set; }
+        public string? Subtype { get; private set; }
 
         /// <summary>
         /// The weapon attack type (melee or ranged)
         /// </summary>
         [JsonProperty("trigger")]
-        public string Trigger { get; private set; }
+        public string? Trigger { get; private set; }
 
         /// <summary>
         /// Type of projectile fired
         /// </summary>
         [JsonProperty("projectile")]
-        public string Projectile { get; private set; }
+        public string? Projectile { get; private set; }
 
         /// <summary>
         /// Weapon projectile flight speed
         /// </summary>
         [JsonProperty("flight")]
-        public string Flight { get; private set; }
+        public string? Flight { get; private set; }
 
         /// <summary>
         /// Weapon range
         /// </summary>
         [JsonProperty("range")]
-        public string Range { get; private set; }
+        public string? Range { get; private set; }
 
         /// <summary>
         /// How noisy the weapon is
         /// </summary>
         [JsonProperty("noise")]
-        public string Noise { get; private set; }
+        public string? Noise { get; private set; }
 
         /// <summary>
         /// Weapon magazine size
@@ -312,7 +312,7 @@ namespace WarframeSharp
         /// Weapon ammo type
         /// </summary>
         [JsonProperty("ammo")]
-        public string Ammo { get; private set; }
+        public string? Ammo { get; private set; }
 
         /// <summary>
         /// Weapon reload speed
@@ -348,12 +348,12 @@ namespace WarframeSharp
         /// Unknown
         /// </summary>
         [JsonProperty("thumbnail")]
-        public string Thumbnail { get; private set; }
+        public string? Thumbnail { get; private set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         [JsonProperty("location")]
-        public string Location { get; private set; }
+        public string? Location { get; private set; }
     }
 }

@@ -12,19 +12,19 @@ namespace WarframeSharp
         /// Invasion Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// The node and planet the invasion is on
         /// </summary>
         [JsonProperty("node")]
-        public string Node { get; private set; }
+        public string? Node { get; private set; }
 
         /// <summary>
         /// The invasion description
         /// </summary>
         [JsonProperty("desc")]
-        public string Description { get; private set; }
+        public string? Description { get; private set; }
 
         /// <summary>
         /// The reward gained from the attackers
@@ -36,7 +36,7 @@ namespace WarframeSharp
         /// The faction that's attacking
         /// </summary>
         [JsonProperty("attackingFaction")]
-        public string AttackingFaction { get; private set; }
+        public string? AttackingFaction { get; private set; }
 
         /// <summary>
         /// The reward gained from the defenders
@@ -48,7 +48,7 @@ namespace WarframeSharp
         /// The faction that's defending
         /// </summary>
         [JsonProperty("defendingFaction")]
-        public string DefendingFaction { get; private set; }
+        public string? DefendingFaction { get; private set; }
 
         /// <summary>
         /// If the invasion is against the Infestation
@@ -60,7 +60,7 @@ namespace WarframeSharp
         /// Timestamp of invasion activations
         /// </summary>
         [JsonProperty("activation")]
-        public string Activation { get; private set; }
+        public string? Activation { get; private set; }
 
         /// <summary>
         /// Current number of community wide runs
@@ -90,12 +90,12 @@ namespace WarframeSharp
         /// Eta until completion
         /// </summary>
         [JsonProperty("eta")]
-        public string Eta { get; private set; }
+        public string? Eta { get; private set; }
 
         /// <summary>
         /// The types of rewards on offer
         /// </summary>
         [JsonProperty("rewardTypes")]
-        public IEnumerable<string> RewardTypes { get; private set; }
+        public IEnumerable<string>? RewardTypes { get; private set; }
     }
 }

@@ -4,6 +4,11 @@
         <name>WarframeSharp</name>
     </assembly>
     <members>
+        <member name="T:WarframeSharp.Arbitration">
+            <summary>
+            Arbitration Object Class
+            </summary>
+        </member>
         <member name="P:WarframeSharp.Arbitration.Activation">
             <summary>
             When the Arbitration becomes active
@@ -1647,6 +1652,11 @@
         <member name="T:WarframeSharp.WarframeSharpClient">
             <summary>
             The Main Client Class
+            </summary>
+        </member>
+        <member name="M:WarframeSharp.WarframeSharpClient.#ctor">
+            <summary>
+            Default constructor
             </summary>
         </member>
         <member name="M:WarframeSharp.WarframeSharpClient.GetWarframeAsync(System.String)">

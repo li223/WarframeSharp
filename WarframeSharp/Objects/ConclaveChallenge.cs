@@ -11,19 +11,19 @@ namespace WarframeSharp
         /// Challenge Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Challenge Description
         /// </summary>
         [JsonProperty("description")]
-        public string Description { get; private set; }
+        public string? Description { get; private set; }
 
         /// <summary>
         /// Challenge Expiration Timestamp
         /// </summary>
         [JsonProperty("expiry")]
-        public string Expiry { get; private set; }
+        public string? Expiry { get; private set; }
 
         /// <summary>
         /// Number of times the challenge needs to be done before completion
@@ -35,19 +35,19 @@ namespace WarframeSharp
         /// Gamemode required for the challenge
         /// </summary>
         [JsonProperty("mode")]
-        public string Mode { get; private set; }
+        public string? Mode { get; private set; }
 
         /// <summary>
         /// Challenge Category
         /// </summary>
         [JsonProperty("category")]
-        public string Category { get; private set; }
+        public string? Category { get; private set; }
 
         /// <summary>
         /// Time until it expires
         /// </summary>
         [JsonProperty("eta")]
-        public string Eta { get; private set; }
+        public string? Eta { get; private set; }
 
         /// <summary>
         /// If the challenge has expired or not
@@ -71,12 +71,12 @@ namespace WarframeSharp
         /// Time until the challenge ends in string format (seems to be the same as eta)
         /// </summary>
         [JsonProperty("endString")]
-        public string EndString { get; private set; }
+        public string? EndString { get; private set; }
 
         /// <summary>
         /// Full Challenge Description
         /// </summary>
         [JsonProperty("asString")]
-        public string AsString { get; private set; }
+        public string? AsString { get; private set; }
     }
 }

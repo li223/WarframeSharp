@@ -11,7 +11,7 @@ namespace WarframeSharp
         /// Flash sale Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// If the sale has expired or not
@@ -23,7 +23,7 @@ namespace WarframeSharp
         /// Unknown
         /// </summary>
         [JsonProperty("eta")]
-        public string Eta { get; private set; }
+        public string? Eta { get; private set; }
 
         /// <summary>
         /// If the deal is popular or not
@@ -53,12 +53,12 @@ namespace WarframeSharp
         /// Timestamp of deal expiration
         /// </summary>
         [JsonProperty("expiry")]
-        public string Expiry { get; private set; }
+        public string? Expiry { get; private set; }
 
         /// <summary>
         /// The item being offered
         /// </summary>
         [JsonProperty("item")]
-        public string Item { get; private set; }
+        public string? Item { get; private set; }
     }
 }

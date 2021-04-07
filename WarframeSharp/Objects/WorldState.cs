@@ -19,121 +19,121 @@ namespace WarframeSharp
         /// The current news
         /// </summary>
         [JsonProperty("news")]
-        public IEnumerable<News> News { get; private set; }
+        public IEnumerable<News>? News { get; private set; }
 
         /// <summary>
         /// The current Events
         /// </summary>
         [JsonProperty("events")]
-        public IEnumerable<Event> Events { get; private set; }
+        public IEnumerable<Event>? Events { get; private set; }
 
         /// <summary>
         /// The current Events
         /// </summary>
         [JsonProperty("alerts")]
-        public IEnumerable<Alert> Alerts { get; private set; }
+        public IEnumerable<Alert>? Alerts { get; private set; }
 
         /// <summary>
         /// The current Sortie
         /// </summary>
         [JsonProperty("sortie")]
-        public Sortie Sortie { get; private set; }
+        public Sortie? Sortie { get; private set; }
 
         /// <summary>
         /// The current Syndicate Missions
         /// </summary>
         [JsonProperty("syndicateMissions")]
-        public IEnumerable<SyndicateMission> SyndicateMissions { get; private set; }
+        public IEnumerable<SyndicateMission>? SyndicateMissions { get; private set; }
 
         /// <summary>
         /// The current Fissures
         /// </summary>
         [JsonProperty("fissures")]
-        public IEnumerable<Fissure> Fissure { get; private set; }
+        public IEnumerable<Fissure>? Fissure { get; private set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         [JsonProperty("globalUpgrades")]
-        public IEnumerable<string> GlobalUpgrades { get; private set; }
+        public IEnumerable<string>? GlobalUpgrades { get; private set; }
 
         /// <summary>
         /// The current Flash Sales
         /// </summary>
         [JsonProperty("flashSales")]
-        public IEnumerable<FlashSale> FlashSale { get; private set; }
+        public IEnumerable<FlashSale>? FlashSale { get; private set; }
 
         /// <summary>
         /// The current Invasions
         /// </summary>
         [JsonProperty("invasions")]
-        public IEnumerable<Invasion> Invasions { get; private set; }
+        public IEnumerable<Invasion>? Invasions { get; private set; }
 
         /// <summary>
         /// The current Dark Sectors
         /// </summary>
         [JsonProperty("darkSectors"), Obsolete("Dark Sectors no longer exist")]
-        public IEnumerable<DarkSector> DarkSectors { get; private set; }
+        public IEnumerable<DarkSector>? DarkSectors { get; private set; }
 
         /// <summary>
         /// The Void Trader data
         /// </summary>
         [JsonProperty("voidTrader")]
-        public VoidTrader VoidTrader { get; private set; }
+        public VoidTrader? VoidTrader { get; private set; }
 
         /// <summary>
         /// The current daily deals
         /// </summary>
         [JsonProperty("dailyDeals")]
-        public IEnumerable<DailyDeal> DailyDeals { get; private set; }
+        public IEnumerable<DailyDeal>? DailyDeals { get; private set; }
 
         /// <summary>
         /// The Sancturay Data
         /// </summary>
         [JsonProperty("simaris")]
-        public SimarisTarget Simaris { get; private set; }
+        public SimarisTarget? Simaris { get; private set; }
 
         /// <summary>
         /// The current Conclave Challenges
         /// </summary>
         [JsonProperty("conclaveChallenges")]
-        public IEnumerable<ConclaveChallenge> ConclaveChallenges { get; private set; }
+        public IEnumerable<ConclaveChallenge>? ConclaveChallenges { get; private set; }
 
         /// <summary>
         /// Unknown
         /// </summary>
         [JsonProperty("persistentEnemies")]
-        public IEnumerable<string> PersistentEnemies { get; private set; }
+        public IEnumerable<string>? PersistentEnemies { get; private set; }
 
         /// <summary>
         /// The current Earth Cycle Data
         /// </summary>
         [JsonProperty("earthCycle")]
-        public EarthCycle EarthCycle { get; private set; }
+        public EarthCycle? EarthCycle { get; private set; }
 
         /// <summary>
         /// The current Cetus Cycle Data
         /// </summary>
         [JsonProperty("cetusCycle")]
-        public CetusCycle CetusCycle { get; private set; }
+        public CetusCycle? CetusCycle { get; private set; }
 
         /// <summary>
         /// The current Vallis Cycle Data
         /// </summary>
         [JsonProperty("vallisCycle")]
-        public VallisCycle VallisCycle { get; private set; }
+        public VallisCycle? VallisCycle { get; private set; }
 
         /// <summary>
         /// The current Conclassion Progress
         /// </summary>
         [JsonProperty("conclassionProgress")]
-        public ConclassionProgress ConclassionProgress { get; private set; }
+        public ConclassionProgress? ConclassionProgress { get; private set; }
 
         /// <summary>
         /// Current Nightwave Alert
         /// </summary>
         [JsonProperty("nightwave")]
-        public Nightwave Nightwave { get; private set; }
+        public Nightwave? Nightwave { get; private set; }
     }
 
     /// <summary>
@@ -145,7 +145,7 @@ namespace WarframeSharp
         /// Conclassion Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Current fomorian progress
@@ -175,7 +175,7 @@ namespace WarframeSharp
         /// Cycle Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Cycle Expiration
@@ -193,7 +193,7 @@ namespace WarframeSharp
         /// Time left until nighttime
         /// </summary>
         [JsonProperty("timeLeft")]
-        public string TimeLeft { get; private set; }
+        public string? TimeLeft { get; private set; }
     }
 
     /// <summary>
@@ -205,7 +205,7 @@ namespace WarframeSharp
         /// Cycle Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Cycle Expiration
@@ -223,13 +223,13 @@ namespace WarframeSharp
         /// Time left until nighttime
         /// </summary>
         [JsonProperty("timeLeft")]
-        public string TimeLeft { get; private set; }
+        public string? TimeLeft { get; private set; }
 
         /// <summary>
         /// Short time string in minutes until Day/Night time
         /// </summary>
         [JsonProperty("shortString")]
-        public string ShortString { get; private set; }
+        public string? ShortString { get; private set; }
     }
 
     /// <summary>
@@ -241,7 +241,7 @@ namespace WarframeSharp
         /// Cycle Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Cycle Expiration
@@ -259,13 +259,13 @@ namespace WarframeSharp
         /// Time left until Warm/Cold
         /// </summary>
         [JsonProperty("timeLeft")]
-        public string TimeLeft { get; private set; }
+        public string? TimeLeft { get; private set; }
 
         /// <summary>
         /// Short time string in minutes until Warm/Cold
         /// </summary>
         [JsonProperty("shortString")]
-        public string ShortString { get; private set; }
+        public string? ShortString { get; private set; }
     }
 
     /// <summary>
@@ -277,7 +277,7 @@ namespace WarframeSharp
         /// The current Synthesis Target
         /// </summary>
         [JsonProperty("target")]
-        public string Target { get; private set; }
+        public string? Target { get; private set; }
 
         /// <summary>
         /// If the current target is active
@@ -289,7 +289,7 @@ namespace WarframeSharp
         /// Unknown
         /// </summary>
         [JsonProperty("asString")]
-        public string AsString { get; private set; }
+        public string? AsString { get; private set; }
     }
 
     /// <summary>
@@ -301,7 +301,7 @@ namespace WarframeSharp
         /// The item the deal is for
         /// </summary>
         [JsonProperty("item")]
-        public string Item { get; private set; }
+        public string? Item { get; private set; }
 
         /// <summary>
         /// Timestamp of the deal's expiration
@@ -337,13 +337,13 @@ namespace WarframeSharp
         /// Deal Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Time until deal is refreshed
         /// </summary>
         [JsonProperty("eta")]
-        public string Eta { get; private set; }
+        public string? Eta { get; private set; }
 
         /// <summary>
         /// The current discount on the item
@@ -361,7 +361,7 @@ namespace WarframeSharp
         /// Trader Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Timestamp of Trader Activation
@@ -379,25 +379,25 @@ namespace WarframeSharp
         /// Name of the Void Trader
         /// </summary>
         [JsonProperty("character")]
-        public string Character { get; private set; }
+        public string? Character { get; private set; }
 
         /// <summary>
         /// Where the trader is or is going to be
         /// </summary>
         [JsonProperty("location")]
-        public string Location { get; private set; }
+        public string? Location { get; private set; }
 
         /// <summary>
         /// The trader's current inventory
         /// </summary>
         [JsonProperty("inventory")]
-        public IEnumerable<VoidTraderItem> Inventory { get; private set; }
+        public IEnumerable<VoidTraderItem>? Inventory { get; private set; }
 
         /// <summary>
         /// Assigned Id
         /// </summary>
         [JsonProperty("psId")]
-        public string PsId { get; private set; }
+        public string? PsId { get; private set; }
 
         /// <summary>
         /// If the trader is currently active
@@ -409,13 +409,13 @@ namespace WarframeSharp
         /// Returns how long until the trader next arrives in human readable format
         /// </summary>
         [JsonProperty("startString")]
-        public string StartString { get; private set; }
+        public string? StartString { get; private set; }
 
         /// <summary>
         /// Returns how long until the trader leaves in human readable format
         /// </summary>
         [JsonProperty("endString")]
-        public string EndString { get; private set; }
+        public string? EndString { get; private set; }
     }
 
 #pragma warning disable CS1591
@@ -423,28 +423,28 @@ namespace WarframeSharp
     public class DarkSector
     {
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         [JsonProperty("isAlliance")]
         public bool IsAlliance { get; private set; }
 
         [JsonProperty("defenderName")]
-        public string DefenderName { get; private set; }
+        public string? DefenderName { get; private set; }
 
         [JsonProperty("defenderDeployemntActivation")]
         public int DefenderDeployemntActivation { get; private set; }
 
         [JsonProperty("defenderMOTD")]
-        public string DefenderMOTD { get; private set; }
+        public string? DefenderMOTD { get; private set; }
 
         [JsonProperty("deployerName")]
-        public string DeployerName { get; private set; }
+        public string? DeployerName { get; private set; }
 
         [JsonProperty("deployerClan")]
-        public string DeployerClan { get; private set; }
+        public string? DeployerClan { get; private set; }
 
         [JsonProperty("history")]
-        public IEnumerable<DarkSector?> History { get; private set; }
+        public IEnumerable<DarkSector?>? History { get; private set; }
     }
 
     /// <summary>
@@ -456,7 +456,7 @@ namespace WarframeSharp
         /// The item name
         /// </summary>
         [JsonProperty("item")]
-        public string Item { get; private set; }
+        public string? Item { get; private set; }
 
         /// <summary>
         /// Ducat cost
@@ -483,7 +483,7 @@ namespace WarframeSharp
         /// Alert/Event Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// Alert/Event Activation
@@ -503,7 +503,7 @@ namespace WarframeSharp
         /// </summary>
 
         [JsonProperty("mission")]
-        public Mission Mission { get; private set; }
+        public Mission? Mission { get; private set; }
 
         /// <summary>
         /// If the alert has expired or not
@@ -515,13 +515,13 @@ namespace WarframeSharp
         /// Time left on the alert
         /// </summary>
         [JsonProperty("eta")]
-        public string Eta { get; private set; }
+        public string? Eta { get; private set; }
 
         /// <summary>
         /// Type of rewards
         /// </summary>
         [JsonProperty("rewardTypes")]
-        public string[] RewardTypes { get; private set; }
+        public string[]? RewardTypes { get; private set; }
     }
 
     /// <summary>
@@ -539,6 +539,6 @@ namespace WarframeSharp
         /// Item Type
         /// </summary>
         [JsonProperty("type")]
-        public string Type { get; private set; }
+        public string? Type { get; private set; }
     }
 }

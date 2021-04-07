@@ -1,4 +1,6 @@
-﻿namespace WarframeSharp
+﻿#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
+namespace WarframeSharp
 {
     /// <summary>
     /// The type of enemy

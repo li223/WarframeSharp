@@ -11,25 +11,25 @@ namespace WarframeSharp
         /// Node or planet the mission is on
         /// </summary>
         [JsonProperty("node")]
-        public string Node { get; private set; }
+        public string? Node { get; private set; }
 
         /// <summary>
         /// The mission type
         /// </summary>
         [JsonProperty("type")]
-        public string Type { get; private set; }
+        public string? Type { get; private set; }
 
         /// <summary>
         /// The mission faction
         /// </summary>
         [JsonProperty("faction")]
-        public string Faction { get; private set; }
+        public string? Faction { get; private set; }
 
         /// <summary>
         /// Mission reward
         /// </summary>
         [JsonProperty("reward")]
-        public Reward Reward { get; private set; }
+        public Reward? Reward { get; private set; }
 
         /// <summary>
         /// Min level of the enemies

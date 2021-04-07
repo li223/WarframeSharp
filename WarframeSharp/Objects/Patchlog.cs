@@ -11,42 +11,42 @@ namespace WarframeSharp
         /// Patchlog title
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; private set; }
+        public string? Name { get; private set; }
 
         /// <summary>
         /// Date of the patch release
         /// </summary>
         [JsonProperty("date")]
-        public string Date { get; private set; }
+        public string? Date { get; private set; }
 
         /// <summary>
         /// Forum url
         /// </summary>
         [JsonProperty("url")]
-        public string Url { get; private set; }
+        public string? Url { get; private set; }
 
         /// <summary>
         /// Patch image url
         /// </summary>
         [JsonProperty("imgUrl")]
-        public string ImageUrl { get; private set; }
+        public string? ImageUrl { get; private set; }
 
         /// <summary>
         /// Game additions
         /// </summary>
         [JsonProperty("additions")]
-        public string Additions { get; private set; }
+        public string? Additions { get; private set; }
 
         /// <summary>
         /// Game changes
         /// </summary>
         [JsonProperty("changes")]
-        public string Changes { get; private set; }
+        public string? Changes { get; private set; }
 
         /// <summary>
         /// Game fixes
         /// </summary>
         [JsonProperty("fixes")]
-        public string Fixes { get; private set; }
+        public string? Fixes { get; private set; }
     }
 }

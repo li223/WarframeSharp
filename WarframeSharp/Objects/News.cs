@@ -12,25 +12,25 @@ namespace WarframeSharp
         /// News Id
         /// </summary>
         [JsonProperty("id")]
-        public string Id { get; private set; }
+        public string? Id { get; private set; }
 
         /// <summary>
         /// News message
         /// </summary>
         [JsonProperty("message")]
-        public string Message { get; private set; }
+        public string? Message { get; private set; }
 
         /// <summary>
         /// News link
         /// </summary>
         [JsonProperty("link")]
-        public string Link { get; private set; }
+        public string? Link { get; private set; }
 
         /// <summary>
         /// News image link
         /// </summary>
         [JsonProperty("imageLink")]
-        public string ImageLink { get; private set; }
+        public string? ImageLink { get; private set; }
 
         /// <summary>
         /// Is priority news or not
@@ -42,13 +42,13 @@ namespace WarframeSharp
         /// Date the news was announced
         /// </summary>
         [JsonProperty("date")]
-        public string Date { get; private set; }
+        public string? Date { get; private set; }
 
         /// <summary>
         /// How long ago from now it was posted
         /// </summary>
         [JsonProperty("eta")]
-        public string Eta { get; private set; }
+        public string? Eta { get; private set; }
 
         /// <summary>
         /// Is an update
@@ -72,12 +72,12 @@ namespace WarframeSharp
         /// Language translations
         /// </summary>
         [JsonProperty("translations")]
-        public Dictionary<string, string> Translations { get; private set; }
+        public Dictionary<string, string>? Translations { get; private set; }
 
         /// <summary>
         /// News in markdown format
         /// </summary>
         [JsonProperty("asString")]
-        public string AsString { get; private set; }
+        public string? AsString { get; private set; }
     }
 }

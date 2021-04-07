@@ -3,6 +3,9 @@ using System;
 
 namespace WarframeSharp
 {
+    /// <summary>
+    /// Arbitration Object Class
+    /// </summary>
     public class Arbitration
     {
         /// <summary>
@@ -29,7 +32,7 @@ namespace WarframeSharp
         /// Mission type
         /// </summary>
         [JsonProperty("type")]
-        public string Type { get; private set; }
+        public string? Type { get; private set; }
 
         /// <summary>
         /// Whether or not this mission requires archwing
@@ -47,6 +50,6 @@ namespace WarframeSharp
         /// Plain name for the node
         /// </summary>
         [JsonProperty("node")]
-        public string Node { get; private set; }
+        public string? Node { get; private set; }
     }
 }
